@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+    mapserver:
+        image: camptocamp/mapserver:8.0-arm64
+        container_name: mapserver
+        environment:
+            - MS_MAPFILE=/etc/mapserver/mapserver.map
+            - MS_MAP_FORCE_CONFIG=1
+            - MS_MAPFILE_PATTERN=.*
+            - MS_DEBUGLEVEL=5
+            - MS_MAP_PATTERN=.*
+            - CPL_ALLOW_VSI_IN_VRT=YES
+        volumes:
+            - ./maps:/etc/mapserver:rw
+        ports:
+            - "8080:80"
+        restart: unless-stopped
+
+    atlas-updater:
+        image: python:3.11-alpine
+        container_name: atlas_updater
+        volumes:
+            - ./maps:/maps:rw
+            - ./scripts:/scripts:ro
+        entrypoint:
+            - /bin/sh
+            - -c
+            - |
+                python /scripts/fetchOceanPredictionLayer.py || echo "Initial Ocean Prediction atlas download failed. Retrying on next cron loop."
+                python /scripts/fetchArgo.py || echo "Initial Argo Float layer download failed. Retrying on next cron loop."
+                echo "0 */6 * * * python /scripts/fetchOceanPredictionLayer.py" > /etc/crontabs/root
+                echo "0 */3 * * * python /scripts/fetchArgo.py" >> /etc/crontabs/root
+                exec crond -f -l 2
+        restart: unless-stopped
+        
+networks:
+    default:
+        name: unoceandecadeatlas

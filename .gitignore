@@ -179,3 +179,10 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# GeoJSON
+#  Data files will be generated at startup and in cron, so should not be committed to the repository
+*.geojson
+
+# MacOS file system
+.DS_Store

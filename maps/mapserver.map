@@ -1,0 +1,188 @@
+MAP
+  NAME "unoceandecadeatlas"
+  STATUS ON
+  EXTENT -180 -90 180 90
+  UNITS DD
+  
+  CONFIG "MS_ERRORFILE" "stderr"
+  CONFIG "GDAL_HTTP_TIMEOUT" "30"
+  CONFIG "CPL_DEBUG" "ON"
+  CONFIG "GDAL_HTTP_VERBOSE" "YES"
+  DEBUG 5
+  
+  PROJECTION
+    "EPSG:4326"
+  END
+  
+  WEB
+    METADATA
+      "wms_title" "UN Ocean Decade Atlas"
+      "wms_onlineresource" "http://localhost:8080/?"
+      "wms_srs" "EPSG:4326 EPSG:3857"
+      "wms_enable_request" "*"
+    END
+  END
+
+  SYMBOL
+    NAME "circle"
+    TYPE ELLIPSE
+    POINTS
+      1 1
+    END
+    FILLED TRUE
+  END
+  
+  # --- LAYER 1: GlobalCoast Pilot Sites ---
+  LAYER
+    NAME "globalcoastpilotsites"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://protocoast.cmcc.it/globalcoast-pilot-sites/data/pilot_sites.json"
+    DATA "pilot_sites"
+    
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "GlobalCoast Pilot Sites"
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+    END
+
+    CLASS
+      NAME "Northwest Atlantic Continental Shelf - pilot site validated"
+      EXPRESSION ([region_code] == 1 AND "[status]" == "ok")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 39 123 165
+        OUTLINECOLOR 255 255 255
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Northwest Atlantic Continental Shelf - pilot site 'under review'"
+      EXPRESSION ([region_code] == 1 AND "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 39 123 165
+        OUTLINECOLOR 0 0 0
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Southwestern United States and the Gulf of Mexico - pilot site validated"
+      EXPRESSION ([region_code] == 2 AND "[status]" == "ok")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 218 47 110
+        OUTLINECOLOR 255 255 255
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Southwestern United States and the Gulf of Mexico - pilot site 'under review'"
+      EXPRESSION ([region_code] == 2 AND "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 218 47 110
+        OUTLINECOLOR 0 0 0
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Intra-Americas Sea - pilot site validated"
+      EXPRESSION ([region_code] == 3 AND "[status]" == "ok")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 36 182 22
+        OUTLINECOLOR 255 255 255
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Intra-Americas Sea - pilot site 'under review'"
+      EXPRESSION ([region_code] == 3 AND "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 36 182 22
+        OUTLINECOLOR 0 0 0
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Western Atlantic Continental Shelf between 4ºN and 34ºS - pilot site validated"
+      EXPRESSION ([region_code] == 4 AND "[status]" == "ok")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 90 57 208
+        OUTLINECOLOR 255 255 255
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Western Atlantic Continental Shelf between 4ºN and 34ºS - pilot site 'under review'"
+      EXPRESSION ([region_code] == 4 AND "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 90 57 208
+        OUTLINECOLOR 0 0 0
+        WIDTH 2
+      END
+    END
+  END
+
+  # --- LAYER 2: Argo Floats ---
+  LAYER
+    NAME "argofloats"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "/etc/mapserver/argo_floats.geojson"
+    DATA "argo_floats"
+  
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Latest Argo profiling float locations"
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+    END
+
+    CLASS
+      NAME "Argo Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 255 255 255
+        OUTLINECOLOR 0 0 0
+        WIDTH 1
+      END
+    END
+  END # LAYER
+  
+END # MAP
+
