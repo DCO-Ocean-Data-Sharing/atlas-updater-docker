@@ -5,12 +5,13 @@
 # GeoJSON
 #
 # :author: Adam Leadbetter (@adamml)
-# :date: 2026-08-19
-# :version: 1.0.1
+# :date: 2026-08-20
+# :version: 1.0.2
 #
 # Version History
 # ---------------
 #
+# 1.0.2 2026-09-20 Filtered out global models
 # 1.0.1 2026-09-19 Added ocean basins to output
 # 1.0.0 2026-08-18 Initial version
 
@@ -79,9 +80,12 @@ try:
             oceanBasins = []
             try:
                 for oceanBasin in model["ocean_basins_regions_of_in"]:
+
+                    # Filter global models
                     if oceanBasin["name"] == "Global":
                         raise GlobalModelException("Global model encountered")
                     oceanBasins.append(oceanBasin["name"])
+                
                 # Get the geographic bounding box
                 bbox = [-90, -180, 90, 180]
                 if not model["model_informations"][0]["model_domain_geographical_"]:
@@ -90,8 +94,10 @@ try:
                     bbox[2] = model["model_informations"][0]["model_domain_geo_top_right"]["lat"]
                     bbox[3] = model["model_informations"][0]["model_domain_geo_top_right"]["lng"]
 
-                if bbox[0] == -90 && bbox[1] == -180 && bbox[2] == 90 && bbox[3] == 180:
+                # Filter global models
+                if bbox[0] == -90 and bbox[1] == -180 and bbox[2] == 90 and bbox[3] == 180:
                     raise GlobalModelException("Global model encountered")
+                
                 # Build the GeoJSON
                 models["features"].append({"type": "Feature",
                            "geometry": {
