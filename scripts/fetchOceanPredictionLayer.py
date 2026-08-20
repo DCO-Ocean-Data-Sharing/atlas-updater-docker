@@ -5,13 +5,29 @@
 # GeoJSON
 #
 # :author: Adam Leadbetter (@adamml)
-# :date: 2026-08-18
-# :version: 1.0.0
+# :date: 2026-08-19
+# :version: 1.0.1
+#
+# Version History
+# ---------------
+#
+# 1.0.1 2026-09-19 Added ocean basins to output
+# 1.0.0 2026-08-18 Initial version
 
 import urllib.request
 import json
 import sys
 import xml.etree.ElementTree as ET
+
+
+#
+# Defina a custom exception to elegantly handle global coverage of some models
+#
+class GlobalModelException(Exception):
+    def __init__ (self, message):
+        self.message = message
+        super().__init__(self.message)
+        
 
 #
 # Get the Model Data layer from Mercator
@@ -59,15 +75,25 @@ try:
             organisations = []
             for organisation in model["organization_in_charge_of_"]:
                 organisations.append(organisation["name"])
-            # Get the geographic bounding box
-            bbox = [-90, -180, 90, 180]
-            if not model["model_informations"][0]["model_domain_geographical_"]:
-                bbox[0] = model["model_informations"][0]["model_domain_geo_bot_left"]["lat"]
-                bbox[1] = model["model_informations"][0]["model_domain_geo_bot_left"]["lng"]
-                bbox[2] = model["model_informations"][0]["model_domain_geo_top_right"]["lat"]
-                bbox[3] = model["model_informations"][0]["model_domain_geo_top_right"]["lng"]
-            # Build the GeoJSON
-            models["features"].append({"type": "Feature",
+            # Get the ocean basins regions of interest associated with the forecasting system
+            oceanBasins = []
+            try:
+                for oceanBasin in model["ocean_basins_regions_of_in"]:
+                    if oceanBasin["name"] == "Global":
+                        raise GlobalModelException("Global model encountered")
+                    oceanBasins.append(oceanBasin["name"])
+                # Get the geographic bounding box
+                bbox = [-90, -180, 90, 180]
+                if not model["model_informations"][0]["model_domain_geographical_"]:
+                    bbox[0] = model["model_informations"][0]["model_domain_geo_bot_left"]["lat"]
+                    bbox[1] = model["model_informations"][0]["model_domain_geo_bot_left"]["lng"]
+                    bbox[2] = model["model_informations"][0]["model_domain_geo_top_right"]["lat"]
+                    bbox[3] = model["model_informations"][0]["model_domain_geo_top_right"]["lng"]
+
+                if bbox[0] == -90 && bbox[1] == -180 && bbox[2] == 90 && bbox[3] == 180:
+                    raise GlobalModelException("Global model encountered")
+                # Build the GeoJSON
+                models["features"].append({"type": "Feature",
                            "geometry": {
                                "type": "Polygon",
                                "coordinates": [[
@@ -83,10 +109,13 @@ try:
                                 "otherLinks": model["other_links"],
                                 "numericalModel": model["model_informations"][0]["numerical_model"][0]["name"],
                                 "atmosphericModel": atmosphericModel,
+                                "oceanBasins": oceanBasins,
                                 "typeOfSystem": typeOfSystem,
                                 "applications": applications,
                                 "variablesUsed": variablesUsed,
                                 "essentialOceanVariables": essential_ocean_variables}})
+            except GlobalModelException as e:
+                print(f"Exception encountered: {model['title']} is a global model...")
     with open('/maps/ocean_prediction_atlas.geojson', 'w') as f:
         json.dump(models, f, indent=2) 
 except urllib.error.URLError as e:

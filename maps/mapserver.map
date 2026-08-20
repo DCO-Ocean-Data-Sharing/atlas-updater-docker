@@ -17,6 +17,7 @@ MAP
   WEB
     METADATA
       "wms_title" "UN Ocean Decade Atlas"
+      "wms_abstract" "This Web Map Service wraps non-WMS data sources for layers in the UN Ocean Decade's Digital Atlas to allow them to be displayed in the atlas user interface, derived from the EMODnet Central Portal Map Viewer software.'"
       "wms_onlineresource" "http://localhost:8080/?"
       "wms_srs" "EPSG:4326 EPSG:3857"
       "wms_enable_request" "*"
@@ -52,9 +53,18 @@ MAP
     TEMPLATE "blank.html"
     METADATA
       "wms_title" "GlobalCoast Pilot Sites"
+      "wms_abstract" "This map provides an overview of more than 130 Pilot Site locations that are part of the GlobalCoast framework, for implementation of the CoastPredict programme. This network aims to be an international community, bringing together researchers, governments, BGOs, the private sector and coastal communities to co-design solutions for resilience. Some of the outcomes of this network include the deployment and testing of fit-for-purpose coastal observing and prediction systems at Pilot Sites, delivering user-driven innovative products and services for coastal resilience in collaboration with local stakeholders."
       "wms_extent" "-180 -90 180 90"
       "wms_include_items" "all"
       "gml_include_items" "all"
+      "wms_metadata_href" "https://protocoast.cmcc.it/globalcoast-pilot-sites/"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "Centro Euro-Mediterraneo sui Cambiamenti Climatici (CMCC), Lecce, Italy"
+      "wms_authorityurl_name" "Centro Euro-Mediterraneo sui Cambiamenti Climatici (CMCC), Lecce, Italy"
+      "wms_authorityurl_href" "https://www.cmcc.it"
+      "wms_dataurl_href"   "https://protocoast.cmcc.it/globalcoast-pilot-sites/data/pilot_sites.json"
+      "wms_dataurl_format" "application/json"
     END
 
     CLASS
@@ -167,9 +177,20 @@ MAP
     TEMPLATE "blank.html"
     METADATA
       "wms_title" "Latest Argo profiling float locations"
+      "wms_abstract" "This map shows the positions over the last 10 days of autonomous profiling floats (Argo) operating as part of the international Argo observing programme. This layer is extracted from IFREMER’s Global Data Assembly Centres (GDAC), which manage and distribute data from these instruments in real time. Argo floats repeatedly descend, drift and rise through the ocean while measuring pressure, temperature and salinity; specialised Deep Argo and Biogeochemical Argo floats can observe deeper waters or additional biological and chemical properties. The observations are transmitted once a float reaches the surface and contribute to understanding ocean heat, freshwater, circulation, climate variability and change, as well as to ocean analysis and forecasting."
       "wms_extent" "-180 -90 180 90"
       "wms_include_items" "all"
       "gml_include_items" "all"
+      "wms_attribution_text" "These data were collected and made freely available by the International Argo Program and the national programs that contribute to it.  (https://argo.ucsd.edu,  https://www.ocean-ops.org).  The Argo Program is part of the Global Ocean Observing System. Argo (2000). Argo float data and metadata from Global Data Assembly Centre (Argo GDAC). SEANOE. https://doi.org/10.17882/42182"
+      "wms_attribution_onlineresource" "https://argo.ucsd.edu/data/acknowledging-argo/"
+      "wms_metadataurl_href"   "https://erddap.ifremer.fr/erddap/metadata/iso19115/xml/ArgoFloats_iso19115.xml"
+      "wms_metadataurl_format" "application/xml"
+      "wms_metadataurl_type"   "TC211"
+      "wms_authority" "Argo @ University of California, San Diego"
+      "wms_authorityurl_name" "Argo @ University of California, San Diego"
+      "wms_authorityurl_href" "https://argo.ucsd.edu"
+      "wms_dataurl_href"   "https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats.geoJson?platform_number,project_name,platform_type,latitude,longitude&time%3E%3Dnow-10days&time%3Cnow"
+      "wms_dataurl_format" "application/geo+json"
     END
 
     CLASS
@@ -183,6 +204,103 @@ MAP
       END
     END
   END # LAYER
+  
+  # --- LAYER 3: Ocean Networks Canada observatories ---
+  LAYER
+      NAME "oceannetworkscanada"
+      TYPE POINT
+      STATUS ON
+      SIZEUNITS PIXELS
+      CONNECTIONTYPE OGR
+      
+      TOLERANCE 10
+      TOLERANCEUNITS PIXELS
+      
+      CONNECTION "/vsicurl/https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/ONCSites_CO2_XYTableToPoint/FeatureServer/0/query?where=1=1&outFields=*&f=geojson"
+      DATA "0"
+      
+      CONNECTIONOPTIONS
+        "DRIVER" "GeoJSON"
+      END
+      
+      PROJECTION
+        "EPSG:4326"
+      END
+      TEMPLATE "blank.html"
+      METADATA
+        "wms_title" "Ocean Networks Canada observatory and instrument locations"
+        "wms_abstract" "This map shows the location of the ocean observatories deployed by Ocean Networks Canada (ONC). This network collects data on physical, chemical, biological, and geological aspects of the Pacific, Arctic, and Atlantic oceans. These observatories support research on complex Earth processes in ways not previously possible, providing scientists, communities, and decision-makers with access to free, open, continuous, long-time series data from anywhere in the world, in real-time."
+        "wms_extent" "-180 -90 180 90"
+        "wms_include_items" "all"
+        "gml_include_items" "all"
+        "wms_attribution_text" "Ocean Networks Canada's still images; audio files; video; maps, graphics and all content not hosted on ONC data portals (Oceans 3.0 and ERDDAP) is, in general, copyrighted in compliance with the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License."
+          "wms_attribution_onlineresource" "https://www.oceannetworks.ca/multimedia/"
+          "wms_metadataurl_href"   "https://www.arcgis.com/home/item.html?id=fcea4e5f087f41c58bcc5e51b13fffa1#overview"
+          "wms_metadataurl_format" "text/html"
+          "wms_metadataurl_type"   "TC211"
+          "wms_authority" "Ocean Networks Canada"
+          "wms_authorityurl_name" "Ocean Networks Canada"
+          "wms_authorityurl_href" "https://www.oceannetworks.ca"
+          "wms_dataurl_href"   "https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/ONCSites_CO2_XYTableToPoint/FeatureServer/0/query?where=1=1&outFields=*&f=geojson"
+          "wms_dataurl_format" "application/geo+json"
+      END
+      
+      CLASS
+      NAME "ONC Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 24 144 255
+        OUTLINECOLOR 0 0 0
+        WIDTH 1
+      END
+    END
+      
+  END
+  
+  # --- LAYER 4: Ocean Prediction Atlas ---
+  LAYER
+      NAME "dccoceanpredictionforecastingsystemsatlas"
+      TYPE POLYGON
+      STATUS ON
+      
+      CONNECTIONTYPE OGR
+      CONNECTION "/etc/mapserver/ocean_prediction_atlas.geojson"
+      
+      DATA "ocean_prediction_atlas" 
+      
+      PROJECTION
+          "EPSG:4326"
+      END
+      TEMPLATE "blank.html"
+      METADATA
+        "wms_title" "Decade Collaborative Centre for Ocean Prediction ocean forecasting systems atlas"
+        "wms_abstract" "This map shows the Ocean Forecasting Systems that provide ocean prediction services and modelling. It allows viewers to compare the distribution and characteristics of forecasting capacity around the world and to identify systems relevant to specific ocean regions or uses. It indicates the system title, responsible organisations, data policy, numerical and atmospheric models, main applications, variables used, and related links where available. This layer is extracted from the Atlas produced by the DCC for Ocean Prediction and its community in support of the Ocean Decade goal of a predicted ocean.
+Operational ocean forecasting combines observations from satellites, buoys, floats, ships and other platforms with numerical models and data assimilation methods to describe the present state of the ocean and estimate how conditions may evolve."
+        "wms_extent" "-180 -90 180 90"
+        "wms_include_items" "all"
+        "gml_include_items" "all"
+        "wms_attribution_text" "Decade Collaborative Centre for Ocean Prediction"
+          "wms_attribution_onlineresource" "https://www.unoceanprediction.org/en/homepage"
+          "wms_metadataurl_href"   "https://www.unoceanprediction.org/en/atlas/models"
+          "wms_metadataurl_format" "text/html"
+          "wms_metadataurl_type"   "TC211"
+          "wms_authority" "Decade Collaborative Centre for Ocean Prediction"
+          "wms_authorityurl_name" "Decade Collaborative Centre for Ocean Prediction"
+          "wms_authorityurl_href" "https://www.unoceanprediction.org/en/homepage"
+          "wms_dataurl_href"   "https://www.unoceanprediction.org/en/api/atlas/models"
+          "wms_dataurl_format" "application/json"
+      END
+      
+      CLASS
+          NAME "OceanPrediction01"
+          STYLE
+            COLOR 240 240 240
+            OUTLINECOLOR 100 100 100
+            WIDTH 1
+          END
+      END      
+  END
   
 END # MAP
 
