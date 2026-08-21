@@ -18,11 +18,10 @@
 import urllib.request
 import json
 import sys
-import xml.etree.ElementTree as ET
 
 
 #
-# Defina a custom exception to elegantly handle global coverage of some models
+# Define a custom exception to elegantly handle global coverage of some models
 #
 class GlobalModelException(Exception):
     def __init__ (self, message):

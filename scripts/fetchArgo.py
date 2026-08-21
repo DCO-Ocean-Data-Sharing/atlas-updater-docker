@@ -25,7 +25,7 @@ except urllib.error.URLError as e:
     print(f"Network error encountered: {e.reason}")
 except urllib.error.HTTPError as e:
     print(f"HTTP Error {e.code}: Unable to fetch data from Mercator API")
-except PermissionError:
+except PermissionError as e:
     print(f"Permission denied: Cannot write to output file to disk {e}")
 except TypeError as e:
     print(f"Data error: The parsed JSON dictionary contains non-serializable objects: {e}")
