@@ -68,90 +68,313 @@ MAP
     END
 
     CLASS
-      NAME "Northwest Atlantic Continental Shelf - pilot site validated"
-      EXPRESSION ([region_code] == 1 AND "[status]" == "ok")
+      NAME "Northwest Atlantic Continental Shelf - pilot site"
+      EXPRESSION ([region_code] == 1 AND "[status]" == "ok" OR "[status]" == "under_review")
       STYLE
         SYMBOL "circle"
         SIZE 10
         COLOR 39 123 165
-        OUTLINECOLOR 255 255 255
+        OUTLINECOLOR 39 123 165
         WIDTH 2
       END
     END
+    
     CLASS
-      NAME "Northwest Atlantic Continental Shelf - pilot site 'under review'"
-      EXPRESSION ([region_code] == 1 AND "[status]" == "under_review")
-      STYLE
-        SYMBOL "circle"
-        SIZE 10
-        COLOR 39 123 165
-        OUTLINECOLOR 0 0 0
-        WIDTH 2
-      END
-    END
-    CLASS
-      NAME "Southwestern United States and the Gulf of Mexico - pilot site validated"
-      EXPRESSION ([region_code] == 2 AND "[status]" == "ok")
+      NAME "Southwestern United States and the Gulf of Mexico - pilot site"
+      EXPRESSION ([region_code] == 2 AND "[status]" == "ok" OR "[status]" == "under_review")
       STYLE
         SYMBOL "circle"
         SIZE 10
         COLOR 218 47 110
-        OUTLINECOLOR 255 255 255
+        OUTLINECOLOR 218 47 110
         WIDTH 2
       END
     END
+    
     CLASS
-      NAME "Southwestern United States and the Gulf of Mexico - pilot site 'under review'"
-      EXPRESSION ([region_code] == 2 AND "[status]" == "under_review")
-      STYLE
-        SYMBOL "circle"
-        SIZE 10
-        COLOR 218 47 110
-        OUTLINECOLOR 0 0 0
-        WIDTH 2
-      END
-    END
-    CLASS
-      NAME "Intra-Americas Sea - pilot site validated"
-      EXPRESSION ([region_code] == 3 AND "[status]" == "ok")
+      NAME "Intra-Americas Sea - pilot site"
+      EXPRESSION ([region_code] == 3 AND "[status]" == "ok" OR "[status]" == "under_review")
       STYLE
         SYMBOL "circle"
         SIZE 10
         COLOR 36 182 22
-        OUTLINECOLOR 255 255 255
+        OUTLINECOLOR 36 182 22
         WIDTH 2
       END
     END
+    
     CLASS
-      NAME "Intra-Americas Sea - pilot site 'under review'"
-      EXPRESSION ([region_code] == 3 AND "[status]" == "under_review")
-      STYLE
-        SYMBOL "circle"
-        SIZE 10
-        COLOR 36 182 22
-        OUTLINECOLOR 0 0 0
-        WIDTH 2
-      END
-    END
-    CLASS
-      NAME "Western Atlantic Continental Shelf between 4ºN and 34ºS - pilot site validated"
-      EXPRESSION ([region_code] == 4 AND "[status]" == "ok")
+      NAME "Western Atlantic Continental Shelf between 4ºN and 34ºS - pilot site"
+      EXPRESSION ([region_code] == 4 AND "[status]" == "ok" OR "[status]" == "under_review")
       STYLE
         SYMBOL "circle"
         SIZE 10
         COLOR 90 57 208
-        OUTLINECOLOR 255 255 255
+        OUTLINECOLOR 90 57 208
         WIDTH 2
       END
     END
+    
     CLASS
-      NAME "Western Atlantic Continental Shelf between 4ºN and 34ºS - pilot site 'under review'"
-      EXPRESSION ([region_code] == 4 AND "[status]" == "under_review")
+      NAME "Western South Atlantic Continental (33⁰ To 55⁰S) - pilot site"
+      EXPRESSION ([region_code] == 5 AND "[status]" == "ok" OR "[status]" == "under_review")
       STYLE
         SYMBOL "circle"
         SIZE 10
-        COLOR 90 57 208
-        OUTLINECOLOR 0 0 0
+        COLOR 173 102 31
+        OUTLINECOLOR 173 102 31
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "Western South America - pilot site"
+      EXPRESSION ([region_code] == 6 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 37 228 190
+        OUTLINECOLOR 37 228 190
+        WIDTH 2
+      END
+    END
+   
+    CLASS
+      NAME "Eastern Tropical North Pacific To The Gulf Of California - pilot site"
+      EXPRESSION ([region_code] == 7 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 165 39 155
+        OUTLINECOLOR 165 39 155
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "Western North American Continental Margins: Vancouver Island To The Tip Of Baja California - pilot site"
+      EXPRESSION ([region_code] == 8 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 153 218 47
+        OUTLINECOLOR 153 218 47
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "The China Seas: The Bohai Sea, Yellow Sea, East China Sea And South China Sea - pilot site"
+      EXPRESSION ([region_code] == 12 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 22 75 182
+        OUTLINECOLOR 22 75 182
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "Outer Southeast Asia Seas - pilot site"
+      EXPRESSION ([region_code] == 13 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 203 56 61
+        OUTLINECOLOR 203 56 61
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "The North Indian Ocean - pilot site"
+      EXPRESSION ([region_code] == 14 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 31 173 66
+        OUTLINECOLOR 31 173 66
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "The Coastal Oceans Of South-Eastern Africa - pilot site"
+      EXPRESSION ([region_code] == 15 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 142 37 228
+        OUTLINECOLOR 142 37 228
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "The Benguela Current System - pilot site"
+      EXPRESSION ([region_code] == 16 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 165 144 39
+        OUTLINECOLOR 165 144 39
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "The Gulf Of Guinea - pilot site"
+      EXPRESSION ([region_code] == 17 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 47 195 218
+        OUTLINECOLOR 47 195 218
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "The Celtic Seas - pilot site"
+      EXPRESSION ([region_code] == 19 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 182 22 15
+        OUTLINECOLOR 182 22 15
+        WIDTH 2
+      END
+    END
+   
+    CLASS
+      NAME "The Baltic And North Seas - pilot site"
+      EXPRESSION ([region_code] == 20 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 100 208 57
+        OUTLINECOLOR 100 208 57
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "Iceland, Faroe And Norwegian Coasts - pilot site"
+      EXPRESSION ([region_code] == 21 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 31 31 173
+        OUTLINECOLOR 31 31 173
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "The Bering Sea Shelf - pilot site"
+      EXPRESSION ([region_code] == 24 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 228 94 37
+        OUTLINECOLOR 228 94 37
+        WIDTH 2
+      END
+    END
+   
+    CLASS
+      NAME "Labrador Sea - Baffin Bay - pilot site"
+      EXPRESSION ([region_code] == 25 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 39 165 113
+        OUTLINECOLOR 39 165 113
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "Shelf Areas In The Mediterranean Sea - pilot site"
+      EXPRESSION ([region_code] == 27 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 198 47 218
+        OUTLINECOLOR 198 47 218
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "The Black Sea - pilot site"
+      EXPRESSION ([region_code] == 28 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 155 182 22
+        OUTLINECOLOR 155 182 22
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "Seas Of The Arabian Region - pilot site"
+      EXPRESSION ([region_code] == 29 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 57 138 208
+        OUTLINECOLOR 57 138 208
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "Australia’S Shelf Seas - pilot site"
+      EXPRESSION ([region_code] == 30 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 174 31 66
+        OUTLINECOLOR 174 31 66
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "New Zealand Shelf Region - pilot site"
+      EXPRESSION ([region_code] == 31 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 37 228 47
+        OUTLINECOLOR 37 228 47
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "East Antarctica (0° To 150°E) - pilot site"
+      EXPRESSION ([region_code] == 32 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 81 39 165
+        OUTLINECOLOR 81 39 165
+        WIDTH 2
+      END
+    END
+    
+    CLASS
+      NAME "Melanesia & Micronesia - pilot site"
+      EXPRESSION ([region_code] == 33 AND "[status]" == "ok" OR "[status]" == "under_review")
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 218 155 47
+        OUTLINECOLOR 218 155 47
         WIDTH 2
       END
     END
@@ -176,7 +399,7 @@ MAP
     END
     TEMPLATE "blank.html"
     METADATA
-      "wms_title" "Latest Argo profiling float locations"
+      "wms_title" "Argo float locations"
       "wms_abstract" "This map shows the positions over the last 10 days of autonomous profiling floats (Argo) operating as part of the international Argo observing programme. This layer is extracted from IFREMER’s Global Data Assembly Centres (GDAC), which manage and distribute data from these instruments in real time. Argo floats repeatedly descend, drift and rise through the ocean while measuring pressure, temperature and salinity; specialised Deep Argo and Biogeochemical Argo floats can observe deeper waters or additional biological and chemical properties. The observations are transmitted once a float reaches the surface and contribute to understanding ocean heat, freshwater, circulation, climate variability and change, as well as to ocean analysis and forecasting."
       "wms_extent" "-180 -90 180 90"
       "wms_include_items" "all"
@@ -198,9 +421,9 @@ MAP
       STYLE
         SYMBOL "circle"
         SIZE 10
-        COLOR 255 255 255
-        OUTLINECOLOR 0 0 0
-        WIDTH 1
+        COLOR 0 0 0
+        OUTLINECOLOR 255 255 255
+        WIDTH 5
       END
     END
   END # LAYER
@@ -244,21 +467,101 @@ MAP
           "wms_dataurl_href"   "https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/ONCSites_CO2_XYTableToPoint/FeatureServer/0/query?where=1=1&outFields=*&f=geojson"
           "wms_dataurl_format" "application/geo+json"
       END
-      
+
+      CLASSITEM "devicecategoryna"
+            
       CLASS
-      NAME "ONC Style"
+      NAME "Community Observatory"
+      EXPRESSION "Community Observatory"
       STYLE
         SYMBOL "circle"
         SIZE 10
-        COLOR 24 144 255
-        OUTLINECOLOR 0 0 0
+        COLOR 232 115 74
+        OUTLINECOLOR 232 115 74
         WIDTH 1
       END
     END
-      
+      CLASS
+      NAME "Earthquake Early Warning"
+      EXPRESSION "Earthquake Early Warning"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 232 115 74
+        OUTLINECOLOR 0 0 0
+        WIDTH 3
+      END
+    END
+    CLASS
+      NAME "Ferries"
+      EXPRESSION "Ferries"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 26 54 104
+        OUTLINECOLOR 26 54 104
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Instrument"
+      EXPRESSION "Instrument"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 255 255 255
+        OUTLINECOLOR 10 37 64
+        WIDTH 3
+      END
+    END
+    CLASS
+      NAME "Mobile Asset"
+      EXPRESSION "Mobile Asset"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 252 192 63
+        OUTLINECOLOR 252 192 63
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Mooring"
+      EXPRESSION "Mooring"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 255 255 255
+        OUTLINECOLOR 252 192 63
+        WIDTH 3
+      END
+    END
+    CLASS
+      NAME "Node"
+      EXPRESSION "Node"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 233 76 56
+        OUTLINECOLOR 233 76 56
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Oceanographic Radar System"
+      EXPRESSION "Oceanographic Radar System"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 252 192 63
+        OUTLINECOLOR 252 192 63
+        WIDTH 2
+      END
+    END
+
   END
   
-  # --- LAYER 4: Ocean Prediction Atlas ---
+ # --- LAYER 4: Ocean Prediction Atlas ---
   LAYER
       NAME "dccoceanpredictionforecastingsystemsatlas"
       TYPE POLYGON
@@ -291,16 +594,79 @@ Operational ocean forecasting combines observations from satellites, buoys, floa
           "wms_dataurl_href"   "https://www.unoceanprediction.org/en/api/atlas/models"
           "wms_dataurl_format" "application/json"
       END
-      
+
+      CLASSITEM "typeOfSystem"
       CLASS
-          NAME "OceanPrediction01"
+          NAME "Biogeochemical"        
           STYLE
-            COLOR 240 240 240
+            COLOR 209 159 42
             OUTLINECOLOR 100 100 100
             WIDTH 1
+            OPACITY 60
           END
-      END      
+      END  
+    END
+ # --- LAYER 5: UNESCO World Marine Heritage Sites ---
+  LAYER
+      NAME "marineheritagesites"
+      TYPE POINT
+      STATUS ON
+      
+      CONNECTIONTYPE OGR
+      CONNECTION "/etc/mapserver/marine_world_heritage_sites.geojson.json"
+      TEMPLATE "blank.html"
+      METADATA
+        "wms_title" "World Marine Heritage Sites recognised by UNESCO"
+        "wms_abstract" "This map shows the global network of 51 marine heritage sites recognised by UNESCO. The mission of the world Heritage Marine Programme is to establish effective conservation of existing and potential marine areas of Outstanding Universal Value to make sure they will be maintained and thrive for generations to come."
+        "wms_extent" "-180 -90 180 90"
+        "wms_include_items" "all"
+        "gml_include_items" "all"
+        "wms_attribution_text" "UNESCO World Heritage Programme"
+          "wms_attribution_onlineresource" "https://whc.unesco.org/en/list/"
+          "wms_metadataurl_href"   "https://whc.unesco.org/en/list/?search=&themes=7&order=country"
+          "wms_metadataurl_format" "text/html"
+          "wms_metadataurl_type"   "TC211"
+          "wms_authority" "UNESCO World Heritage Programme"
+          "wms_authorityurl_name" "UNESCO World Heritage Programme"
+          "wms_authorityurl_href" "https://whc.unesco.org/en/list/"
+          "wms_dataurl_href"   "https://whc.unesco.org/en/list/?search=&themes=7&order=country"
+          "wms_dataurl_format" "application/json"
+      END
+
+      CLASSITEM "cat"
+      CLASS
+          NAME "In Danger"
+          EXPRESSION ([danger] = 1)        
+          STYLE
+            SYMBOL "circle"
+            SIZE 10
+            COLOR 194 32 51
+            OUTLINECOLOR 194 32 51
+            WIDTH 2
+          END
+      END   
+      CLASS
+      Name "Mixed"
+      EXPRESSION ([cat] = 3)
+      STYLE
+      SYMBOL "circle"
+      SIZE 10
+      COLOR 252 192 63
+      OUTLINECOLOR 45 154 71
+      WIDTH 2
+      END
+    END
+      CLASS
+      Name "Natural"
+      EXPRESSION ([cat] = 2)
+      STYLE
+      SYMBOL "circle"
+      SIZE 10
+      COLOR 114 183 67
+      OUTLINECOLOR 114 183 67
+      WIDTH 2
+      END
+    END   
   END
-  
 END # MAP
 
