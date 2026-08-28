@@ -1,0 +1,2628 @@
+{
+    "allIds": "100000000,937,154,186,578,577,629,1369,798,764,1000,72,1216,820,928,1314,1,898,258,1115,1603,1314,1267,452,609,608,1193,1362,1325,506,410,554,1182,1510,1314,877,1195,1386,1138,653,652,1023,185,854,417,262,898,387,740,76,72,1326,672,1263",
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "properties": {
+                "id_no": 1,
+                "danger": 0,
+                "component_state": "Ecuador",
+                "cat": 2,
+                "title": "Galápagos Islands",
+                "icon": 2,
+                "component_name": "Galápagos Islands"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -90.5013190000,
+                    -0.6898600000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 72,
+                "danger": 0,
+                "component_state": "",
+                "cat": 2,
+                "title": "Kluane / Wrangell-St. Elias / Glacier Bay / Tatshenshini-Alsek",
+                "icon": 2,
+                "component_name": "Kluane / Wrangell-St. Elias / Glacier Bay / Tatshenshini-Alsek"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -140.9919722000,
+                    61.1975833300
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 76,
+                "danger": 1,
+                "component_state": "United States of America",
+                "cat": 2,
+                "title": "Everglades National Park",
+                "icon": 12,
+                "component_name": "Everglades National Park"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -80.9963888900,
+                    25.5544444400
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 154,
+                "danger": 0,
+                "component_state": "Australia",
+                "cat": 2,
+                "title": "Great Barrier Reef",
+                "icon": 2,
+                "component_name": "Great Barrier Reef"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    147.7000000000,
+                    -18.2861111100
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 185,
+                "danger": 0,
+                "component_state": "Seychelles",
+                "cat": 2,
+                "title": "Aldabra Atoll",
+                "icon": 2,
+                "component_name": "Aldabra Atoll"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    46.4166666700,
+                    -9.4166666670
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 186,
+                "danger": 0,
+                "component_state": "Australia",
+                "cat": 2,
+                "title": "Lord Howe Island Group",
+                "icon": 2,
+                "component_name": "Lord Howe Island Group"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    159.0883333000,
+                    -31.5655555600
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 258,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "Gulf of Porto: Calanche of Piana, Gulf of Girolata, Scandola Reserve",
+                "icon": 2,
+                "component_name": "Gulf of Porto: Calanche of Piana, Gulf of Girolata, Scandola Reserve"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.6288333330,
+                    42.3251944400
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 262,
+                "danger": 0,
+                "component_state": "Sudan",
+                "cat": 2,
+                "title": "Sanganeb Marine National Park and Dungonab Bay – Mukkawar Island Marine National Park",
+                "icon": 2,
+                "component_name": "Sanganeb Marine National Park (SMNP)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    37.4430555556,
+                    19.7361111111
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 262,
+                "danger": 0,
+                "component_state": "Sudan",
+                "cat": 2,
+                "title": "Sanganeb Marine National Park and Dungonab Bay – Mukkawar Island Marine National Park",
+                "icon": 2,
+                "component_name": "Dungonab Bay-Mukkawar Island Marine National Park"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    37.2552777778,
+                    20.9372222222
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 387,
+                "danger": 0,
+                "component_state": "United Kingdom of Great Britain and Northern Ireland",
+                "cat": 3,
+                "title": "St Kilda",
+                "icon": 3,
+                "component_name": "St Kilda"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.5766666670,
+                    57.8172222200
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 410,
+                "danger": 0,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Sian Ka'an",
+                "icon": 2,
+                "component_name": "Sian Ka'an"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.7916700000,
+                    19.3833300000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 417,
+                "danger": 0,
+                "component_state": "Spain",
+                "cat": 3,
+                "title": "Ibiza, Biodiversity and Culture",
+                "icon": 3,
+                "component_name": "Natural site"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.4451944444,
+                    38.7925277778
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 417,
+                "danger": 0,
+                "component_state": "Spain",
+                "cat": 3,
+                "title": "Ibiza, Biodiversity and Culture",
+                "icon": 3,
+                "component_name": "Poblado de sa Caleta"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.3338333333,
+                    38.8678611111
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 417,
+                "danger": 0,
+                "component_state": "Spain",
+                "cat": 3,
+                "title": "Ibiza, Biodiversity and Culture",
+                "icon": 3,
+                "component_name": "Dalt Vila y murallas"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.4355833333,
+                    38.9074444444
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 417,
+                "danger": 0,
+                "component_state": "Spain",
+                "cat": 3,
+                "title": "Ibiza, Biodiversity and Culture",
+                "icon": 3,
+                "component_name": "Necropolis Puig des Molins"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.4299722223,
+                    38.9061666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 452,
+                "danger": 0,
+                "component_state": "India",
+                "cat": 2,
+                "title": "Sundarbans National Park",
+                "icon": 2,
+                "component_name": "Sundarbans National Park"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    88.8958333300,
+                    21.9450000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 506,
+                "danger": 0,
+                "component_state": "Mauritania",
+                "cat": 2,
+                "title": "Banc d'Arguin National Park",
+                "icon": 2,
+                "component_name": "Banc d'Arguin National Park"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.1088900000,
+                    20.2347200000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 554,
+                "danger": 0,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Whale Sanctuary of El Vizcaino",
+                "icon": 2,
+                "component_name": "Laguna Ojo de Liebre"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.1666666670,
+                    27.8333333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 554,
+                "danger": 0,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Whale Sanctuary of El Vizcaino",
+                "icon": 2,
+                "component_name": "Laguna San Ignacio"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -113.1649030000,
+                    26.9786100000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 577,
+                "danger": 0,
+                "component_state": "Australia",
+                "cat": 2,
+                "title": "Heard and McDonald Islands",
+                "icon": 2,
+                "component_name": "Heard and McDonald Islands"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    73.5000000000,
+                    -53.1000000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 578,
+                "danger": 0,
+                "component_state": "Australia",
+                "cat": 2,
+                "title": "Shark Bay, Western Australia",
+                "icon": 2,
+                "component_name": "Shark Bay, Western Australia"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4361111000,
+                    -25.4861111100
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 608,
+                "danger": 0,
+                "component_state": "Indonesia",
+                "cat": 2,
+                "title": "Ujung Kulon National Park",
+                "icon": 2,
+                "component_name": "Ujung Kulon peninsula"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.3747586880,
+                    -6.7817649204
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 608,
+                "danger": 0,
+                "component_state": "Indonesia",
+                "cat": 2,
+                "title": "Ujung Kulon National Park",
+                "icon": 2,
+                "component_name": "Honje Nature Reserve"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.5727075350,
+                    -6.7138085488
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 608,
+                "danger": 0,
+                "component_state": "Indonesia",
+                "cat": 2,
+                "title": "Ujung Kulon National Park",
+                "icon": 2,
+                "component_name": "Panaitan Island"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.2062088850,
+                    -6.6447120859
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 608,
+                "danger": 0,
+                "component_state": "Indonesia",
+                "cat": 2,
+                "title": "Ujung Kulon National Park",
+                "icon": 2,
+                "component_name": "Peucang Island"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.2562988660,
+                    -6.7380140103
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 608,
+                "danger": 0,
+                "component_state": "Indonesia",
+                "cat": 2,
+                "title": "Ujung Kulon National Park",
+                "icon": 2,
+                "component_name": "Krakatau Nature Reserve"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    105.4422409130,
+                    -6.1493818886
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 609,
+                "danger": 0,
+                "component_state": "Indonesia",
+                "cat": 2,
+                "title": "Komodo National Park",
+                "icon": 2,
+                "component_name": "Komodo National Park"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.4894400000,
+                    -8.5433300000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 629,
+                "danger": 0,
+                "component_state": "Australia",
+                "cat": 2,
+                "title": "Macquarie Island",
+                "icon": 2,
+                "component_name": "Macquarie Island"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    158.8955556000,
+                    -54.5947222200
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 652,
+                "danger": 0,
+                "component_state": "Philippines",
+                "cat": 2,
+                "title": "Puerto-Princesa Subterranean River National Park",
+                "icon": 2,
+                "component_name": "Puerto-Princesa Subterranean River National Park"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    118.9166667000,
+                    10.1666666700
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 653,
+                "danger": 0,
+                "component_state": "Philippines",
+                "cat": 2,
+                "title": "Tubbataha Reefs Natural Park",
+                "icon": 2,
+                "component_name": "Tubbataha Reefs Natural Park"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    119.8675000000,
+                    8.9533333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 672,
+                "danger": 0,
+                "component_state": "Viet Nam",
+                "cat": 2,
+                "title": "Ha Long Bay - Cat Ba Archipelago",
+                "icon": 2,
+                "component_name": "Ha Long Bay - Cat Ba Archipelago"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    107.1611111111,
+                    20.8327777778
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 740,
+                "danger": 0,
+                "component_state": "United Kingdom of Great Britain and Northern Ireland",
+                "cat": 2,
+                "title": "Gough and Inaccessible Islands",
+                "icon": 2,
+                "component_name": "Gough Island Wildlife Reserve"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.9286111111,
+                    -40.3247222222
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 740,
+                "danger": 0,
+                "component_state": "United Kingdom of Great Britain and Northern Ireland",
+                "cat": 2,
+                "title": "Gough and Inaccessible Islands",
+                "icon": 2,
+                "component_name": "Inaccessible Island"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -12.6833333333,
+                    -37.3000000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 764,
+                "danger": 0,
+                "component_state": "Belize",
+                "cat": 2,
+                "title": "Belize Barrier Reef Reserve System",
+                "icon": 2,
+                "component_name": "Bacalar Chico National Park and Marine Reserve"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.8360480000,
+                    18.1584390000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 764,
+                "danger": 0,
+                "component_state": "Belize",
+                "cat": 2,
+                "title": "Belize Barrier Reef Reserve System",
+                "icon": 2,
+                "component_name": "Blue Hole Natural Monument"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.5346969386,
+                    17.3159870305
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 764,
+                "danger": 0,
+                "component_state": "Belize",
+                "cat": 2,
+                "title": "Belize Barrier Reef Reserve System",
+                "icon": 2,
+                "component_name": "Half Moon Caye Natural Monument"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.5365950000,
+                    17.2041610000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 764,
+                "danger": 0,
+                "component_state": "Belize",
+                "cat": 2,
+                "title": "Belize Barrier Reef Reserve System",
+                "icon": 2,
+                "component_name": "South Water Caye Marine Reserve"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.1931980000,
+                    16.6671440000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 764,
+                "danger": 0,
+                "component_state": "Belize",
+                "cat": 2,
+                "title": "Belize Barrier Reef Reserve System",
+                "icon": 2,
+                "component_name": "Glovers Reef Marine Reserve"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.7833160000,
+                    16.7999520000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 764,
+                "danger": 0,
+                "component_state": "Belize",
+                "cat": 2,
+                "title": "Belize Barrier Reef Reserve System",
+                "icon": 2,
+                "component_name": "Laughing Bird Caye National Park"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.1971690000,
+                    16.4433980000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 764,
+                "danger": 0,
+                "component_state": "Belize",
+                "cat": 2,
+                "title": "Belize Barrier Reef Reserve System",
+                "icon": 2,
+                "component_name": "Sapodilla Cayes Marine Reserve"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -88.2695570000,
+                    16.1091390000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 798,
+                "danger": 0,
+                "component_state": "Bangladesh",
+                "cat": 2,
+                "title": "The Sundarbans",
+                "icon": 2,
+                "component_name": "Sundarbans West Wildlife Sanctuary"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    89.2319560000,
+                    21.7758410000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 798,
+                "danger": 0,
+                "component_state": "Bangladesh",
+                "cat": 2,
+                "title": "The Sundarbans",
+                "icon": 2,
+                "component_name": "Sundarbans South Sanctuary "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    89.4070560000,
+                    21.7968200000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 798,
+                "danger": 0,
+                "component_state": "Bangladesh",
+                "cat": 2,
+                "title": "The Sundarbans",
+                "icon": 2,
+                "component_name": "Sundarbans East Sanctuary"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    89.7778360000,
+                    21.9446920000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 820,
+                "danger": 0,
+                "component_state": "Costa Rica",
+                "cat": 2,
+                "title": "Cocos Island National Park",
+                "icon": 2,
+                "component_name": "Cocos Island National Park"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -87.0666666700,
+                    5.5333333330
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 854,
+                "danger": 1,
+                "component_state": "Solomon Islands",
+                "cat": 2,
+                "title": "East Rennell",
+                "icon": 12,
+                "component_name": "East Rennell"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    160.3333300000,
+                    -11.6833300000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 877,
+                "danger": 0,
+                "component_state": "New Zealand",
+                "cat": 2,
+                "title": "New Zealand Sub-Antarctic Islands",
+                "icon": 2,
+                "component_name": "The Snares"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    166.5833333333,
+                    -48.0333333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 877,
+                "danger": 0,
+                "component_state": "New Zealand",
+                "cat": 2,
+                "title": "New Zealand Sub-Antarctic Islands",
+                "icon": 2,
+                "component_name": "Bounty Islands"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    179.0254340000,
+                    -47.7516070000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 877,
+                "danger": 0,
+                "component_state": "New Zealand",
+                "cat": 2,
+                "title": "New Zealand Sub-Antarctic Islands",
+                "icon": 2,
+                "component_name": "Antipodes Islands"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    178.8000000000,
+                    -49.6833333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 877,
+                "danger": 0,
+                "component_state": "New Zealand",
+                "cat": 2,
+                "title": "New Zealand Sub-Antarctic Islands",
+                "icon": 2,
+                "component_name": "Auckland Islands"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    166.1083250000,
+                    -50.6662720000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 877,
+                "danger": 0,
+                "component_state": "New Zealand",
+                "cat": 2,
+                "title": "New Zealand Sub-Antarctic Islands",
+                "icon": 2,
+                "component_name": "Campbell Island"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    169.1500000000,
+                    -52.5500000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 898,
+                "danger": 0,
+                "component_state": "Sweden",
+                "cat": 2,
+                "title": "High Coast / Kvarken Archipelago",
+                "icon": 2,
+                "component_name": "High Coast"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.5000000000,
+                    63.0000000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 898,
+                "danger": 0,
+                "component_state": "Finland",
+                "cat": 2,
+                "title": "High Coast / Kvarken Archipelago",
+                "icon": 2,
+                "component_name": "The Kvarken Archipelago - Zone A"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    21.3000000000,
+                    63.3000000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 898,
+                "danger": 0,
+                "component_state": "Finland",
+                "cat": 2,
+                "title": "High Coast / Kvarken Archipelago",
+                "icon": 2,
+                "component_name": "The Kvarken Archipelago - Zone B"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    20.9500000000,
+                    62.9666666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 928,
+                "danger": 0,
+                "component_state": "Costa Rica",
+                "cat": 2,
+                "title": "Area de Conservación Guanacaste",
+                "icon": 2,
+                "component_name": "Area de Conservación Guanacaste"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -85.6166666700,
+                    10.8500000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 937,
+                "danger": 0,
+                "component_state": "Argentina",
+                "cat": 2,
+                "title": "Península Valdés",
+                "icon": 2,
+                "component_name": "Península Valdés"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -64.0000000000,
+                    -42.5000000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1000,
+                "danger": 0,
+                "component_state": "Brazil",
+                "cat": 2,
+                "title": "Brazilian Atlantic Islands: Fernando de Noronha and Atol das Rocas Reserves",
+                "icon": 2,
+                "component_name": "National Marine Park of Fernando de Noronha"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -32.4251111111,
+                    -3.8579444444
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1000,
+                "danger": 0,
+                "component_state": "Brazil",
+                "cat": 2,
+                "title": "Brazilian Atlantic Islands: Fernando de Noronha and Atol das Rocas Reserves",
+                "icon": 2,
+                "component_name": "Biological Marine Reserve of Rocas Atoll"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -33.8196666667,
+                    -3.8604444444
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1023,
+                "danger": 0,
+                "component_state": "Russian Federation",
+                "cat": 2,
+                "title": "Natural System of Wrangel Island Reserve",
+                "icon": 2,
+                "component_name": "Natural System of Wrangel Island Reserve"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -179.7152778000,
+                    71.1888888900
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1115,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "Lagoons of New Caledonia: Reef Diversity and Associated Ecosystems",
+                "icon": 2,
+                "component_name": "Grand Lagon Sud"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    166.9597222222,
+                    -22.5125000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1115,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "Lagoons of New Caledonia: Reef Diversity and Associated Ecosystems",
+                "icon": 2,
+                "component_name": "Zone Côtière Ouest"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    165.6561111111,
+                    -21.6425000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1115,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "Lagoons of New Caledonia: Reef Diversity and Associated Ecosystems",
+                "icon": 2,
+                "component_name": "Zone Côtière Nord-Est"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    164.5663888889,
+                    -20.4119444444
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1115,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "Lagoons of New Caledonia: Reef Diversity and Associated Ecosystems",
+                "icon": 2,
+                "component_name": "Grand Lagon Nord"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    163.5550000000,
+                    -19.4113888889
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1115,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "Lagoons of New Caledonia: Reef Diversity and Associated Ecosystems",
+                "icon": 2,
+                "component_name": "Atolls d’Entrecasteaux"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    163.0802777778,
+                    -18.4366666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1115,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "Lagoons of New Caledonia: Reef Diversity and Associated Ecosystems",
+                "icon": 2,
+                "component_name": "Atoll d’Ouvéa et Beautemps-Beaupré"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    166.4700000000,
+                    -20.5602777778
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1138,
+                "danger": 0,
+                "component_state": "Panama",
+                "cat": 2,
+                "title": "Coiba National Park and its Special Zone of Marine Protection",
+                "icon": 2,
+                "component_name": "Coiba National Park and its Special Zone of Marine Protection"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.7660000000,
+                    7.4330000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Islands of the Gulf of California"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.3333333333,
+                    29.0000000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Upper Gulf of California - Colorado River Delta  (marine portion)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.6000000000,
+                    31.6166666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Isla San Pedro Martir"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.3375000000,
+                    28.3750000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "El Vizcaíno (marine and coastal belt in the Gulf of California) "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -113.6045610000,
+                    27.4719370000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Bahía de Loreto"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -111.2166666667,
+                    25.8430555556
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Cabo Pulmo"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -109.4166666667,
+                    23.4500000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Cabo San Lucas"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -109.8666666670,
+                    22.8666666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Islas Marias"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -106.5333333333,
+                    21.5833333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Isla Isabel"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -105.8833333333,
+                    21.8500000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Archipelago of San Lorenzo"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.8260070000,
+                    28.6404920000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Islas Marietas"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -105.5863500000,
+                    20.6980710000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1182,
+                "danger": 1,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Islands and Protected Areas of the Gulf of California",
+                "icon": 12,
+                "component_name": "Balandra Zone of Ecological Conservation and Community Interest"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.3288888889,
+                    24.3122222222
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1193,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Shiretoko",
+                "icon": 2,
+                "component_name": "Shiretoko"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    144.9658300000,
+                    43.9494400000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1195,
+                "danger": 0,
+                "component_state": "Norway",
+                "cat": 2,
+                "title": "West Norwegian Fjords – Geirangerfjord and Nærøyfjord",
+                "icon": 2,
+                "component_name": "Geirangerfjord Area"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.9500000000,
+                    62.1166666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1195,
+                "danger": 0,
+                "component_state": "Norway",
+                "cat": 2,
+                "title": "West Norwegian Fjords – Geirangerfjord and Nærøyfjord",
+                "icon": 2,
+                "component_name": "Nærøyfjord Area"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.0000000000,
+                    60.9166666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1216,
+                "danger": 0,
+                "component_state": "Colombia",
+                "cat": 2,
+                "title": "Malpelo Fauna and Flora Sanctuary",
+                "icon": 2,
+                "component_name": "Malpelo Fauna and Flora Sanctuary"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -81.6075720000,
+                    4.0033440000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra A"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.8333333333,
+                    12.5000000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra B"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.6240000000,
+                    12.6690000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra a (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.4990000000,
+                    12.7170000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra b (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.7510000000,
+                    12.6390000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra c (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.9410000000,
+                    12.6480000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra d (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    54.0630000000,
+                    12.6770000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra e (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    54.2710000000,
+                    12.6490000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra f (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    54.2160000000,
+                    12.3850000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra g (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.9830000000,
+                    12.3140000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Socotra h (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.5550000000,
+                    12.3220000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Abd Alkuri"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    52.2391666667,
+                    12.1894444444
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Abd Alkuri a (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    52.0580000000,
+                    12.2320000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Abd Alkuri b (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    52.2590000000,
+                    12.2080000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Abd Alkuri c (marine area)"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    52.3770000000,
+                    12.1750000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Samha"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.0422222222,
+                    12.1591666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Darsa"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.2733333333,
+                    12.1236111111
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Kalfarun"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    52.1355555556,
+                    12.4394444444
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1263,
+                "danger": 0,
+                "component_state": "Yemen",
+                "cat": 2,
+                "title": "Socotra Archipelago",
+                "icon": 2,
+                "component_name": "Sabunya"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    53.1572222222,
+                    12.6369444444
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1267,
+                "danger": 0,
+                "component_state": "Iceland",
+                "cat": 2,
+                "title": "Surtsey",
+                "icon": 2,
+                "component_name": "Surtsey"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.6022222222,
+                    63.3030555556
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1314,
+                "danger": 0,
+                "component_state": "Netherlands (Kingdom of the)",
+                "cat": 2,
+                "title": "Wadden Sea",
+                "icon": 2,
+                "component_name": "Key Planning Decision (PKB) Wadden Sea, part I "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    5.6658333333,
+                    53.3908333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1314,
+                "danger": 0,
+                "component_state": "Netherlands (Kingdom of the)",
+                "cat": 2,
+                "title": "Wadden Sea",
+                "icon": 2,
+                "component_name": "Key Planning Decision (PKB) Wadden Sea, part II – Netherlands "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    6.8963888889,
+                    53.3666666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1314,
+                "danger": 0,
+                "component_state": "Germany",
+                "cat": 2,
+                "title": "Wadden Sea",
+                "icon": 2,
+                "component_name": "Key Planning Decision (PKB) Wadden Sea, part III"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.1636111111,
+                    53.2752777778
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1314,
+                "danger": 0,
+                "component_state": "Germany",
+                "cat": 2,
+                "title": "Wadden Sea",
+                "icon": 2,
+                "component_name": "National Park Wadden Sea Niedersachsen, part II "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.3325000000,
+                    53.6955555556
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1314,
+                "danger": 0,
+                "component_state": "Germany",
+                "cat": 2,
+                "title": "Wadden Sea",
+                "icon": 2,
+                "component_name": "National Park Wadden Sea Niedersachsen, part III "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.2638888889,
+                    53.6277777778
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1314,
+                "danger": 0,
+                "component_state": "Germany",
+                "cat": 2,
+                "title": "Wadden Sea",
+                "icon": 2,
+                "component_name": "National Park Wadden Sea Niedersachsen, part IV "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.3683333333,
+                    53.8841666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1314,
+                "danger": 0,
+                "component_state": "Denmark",
+                "cat": 2,
+                "title": "Wadden Sea",
+                "icon": 2,
+                "component_name": "National Park Wadden Sea Schleswig-Holstein / Danish Wadden Sea Nature and Wildlife Reserve, part I "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.4663888889,
+                    54.6086111111
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1314,
+                "danger": 0,
+                "component_state": "Denmark",
+                "cat": 2,
+                "title": "Wadden Sea",
+                "icon": 2,
+                "component_name": "Danish Wadden Sea Nature and Wildlife Reserve, part II "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.1872222222,
+                    55.4988888889
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1325,
+                "danger": 0,
+                "component_state": "Kiribati",
+                "cat": 2,
+                "title": "Phoenix Islands Protected Area",
+                "icon": 2,
+                "component_name": "Phoenix Islands Protected Area"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -172.6502030000,
+                    -3.8644540000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1326,
+                "danger": 0,
+                "component_state": "United States of America",
+                "cat": 3,
+                "title": "Papahānaumokuākea",
+                "icon": 3,
+                "component_name": "Papahānaumokuākea"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -170.1458200000,
+                    25.3490700000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Kitanoshima and peripheral reefs"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.0997222222,
+                    27.7183333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Mukojima and peripheral reefs"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1388888889,
+                    27.6811111111
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Nakodojima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1783333333,
+                    27.6277777778
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Yomejima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.2105555556,
+                    27.4963888889
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Ototojima and peripheral reefs"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1908333333,
+                    27.1663888889
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Anijima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.2097222222,
+                    27.1225000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Some parts of Chichijima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.2091666667,
+                    27.0700000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Nishijima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1666666667,
+                    27.1172222222
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Higashijima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.2450000000,
+                    27.0933333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Minamijima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1750000000,
+                    27.0383333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Some parts of Hahajima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1555555556,
+                    26.6669444444
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Mukohjima and peripheral reefs"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1297222222,
+                    26.6030555556
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Hirajima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1550000000,
+                    26.5852777778
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Meijima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.2316666667,
+                    26.5694444444
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Anejima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.1563888889,
+                    26.5541666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Imotojima and peripheral reefs"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    142.2097222222,
+                    26.5591666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Kita-iwoto and peripheral reefs"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.2822222220,
+                    25.4330555556
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Minami-iwoto"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    141.4625000000,
+                    24.2350000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1362,
+                "danger": 0,
+                "component_state": "Japan",
+                "cat": 2,
+                "title": "Ogasawara Islands",
+                "icon": 2,
+                "component_name": "Nishinoshima and peripheral reefs "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    140.8758333333,
+                    27.2466666667
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1369,
+                "danger": 0,
+                "component_state": "Australia",
+                "cat": 2,
+                "title": "Ningaloo Coast",
+                "icon": 2,
+                "component_name": "Ningaloo Coast"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8100000000,
+                    -22.4510000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1386,
+                "danger": 0,
+                "component_state": "Palau",
+                "cat": 3,
+                "title": "Rock Islands Southern Lagoon",
+                "icon": 3,
+                "component_name": "Rock Islands Southern Lagoon"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    134.3525000000,
+                    7.2469250000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1510,
+                "danger": 0,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Archipiélago de Revillagigedo",
+                "icon": 2,
+                "component_name": "Isla Socorro"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.9752777780,
+                    18.7880555556
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1510,
+                "danger": 0,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Archipiélago de Revillagigedo",
+                "icon": 2,
+                "component_name": "Isla Clarion"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -114.7233333330,
+                    18.3563888889
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1510,
+                "danger": 0,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Archipiélago de Revillagigedo",
+                "icon": 2,
+                "component_name": "Isla San Benedicto"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -110.8161111110,
+                    19.3033333333
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1510,
+                "danger": 0,
+                "component_state": "Mexico",
+                "cat": 2,
+                "title": "Archipiélago de Revillagigedo",
+                "icon": 2,
+                "component_name": "Isla Roca Partida"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -112.0658333330,
+                    18.9975000000
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1603,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "French Austral Lands and Seas",
+                "icon": 2,
+                "component_name": "Crozet"
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    50.9131666667,
+                    -46.2551388889
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1603,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "French Austral Lands and Seas",
+                "icon": 2,
+                "component_name": "Kerguelen "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    69.3528055556,
+                    -49.3803583334
+                ]
+            }
+        },
+        {
+            "properties": {
+                "id_no": 1603,
+                "danger": 0,
+                "component_state": "France",
+                "cat": 2,
+                "title": "French Austral Lands and Seas",
+                "icon": 2,
+                "component_name": "Saint-Paul et Amsterdam "
+            },
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    77.5836083333,
+                    -38.3001388889
+                ]
+            }
+        }
+    ]
+}
