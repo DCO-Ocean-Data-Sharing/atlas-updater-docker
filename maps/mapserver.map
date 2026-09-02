@@ -668,5 +668,91 @@ Operational ocean forecasting combines observations from satellites, buoys, floa
       END
     END   
   END
-END # MAP
+ # --- LAYER 6: ProtectedSeas Navigator ---
+  LAYER
+      NAME "protectedseasnavigator"
+      TYPE POLYGON
+      STATUS ON
 
+      CONNECTIONTYPE OGR
+      CONNECTION "/etc/mapserver/protectedseas_navigator.gpkg"
+      DATA "protectedseas_navigator"
+
+      PROJECTION
+        "EPSG:4326"
+      END
+
+      TEMPLATE "blank.html"
+
+      METADATA
+        "wms_title" "ProtectedSeas Navigator - All Sites"
+        "wms_abstract" "This map shows marine protected areas and other area-based management measures included in
+the ProtectedSeas Navigator database. The layer provides information on the location and characteristics of managed marine areas around the world, including their designation, managing authority and Level of Fishing Protection. Fishing protection is represented using the ProtectedSeas Level of Fishing Protection score from 1 to 5, allowing users to compare the relative level of fishing restrictions across sites and explore patterns in marine protection and management."
+        "wms_extent" "-180 -90 180 90"
+        "wms_include_items" "all"
+        "gml_include_items" "all"
+
+        "wms_attribution_text" "ProtectedSeas"
+        "wms_attribution_onlineresource" "https://navigatormap.org/"
+        "wms_metadataurl_href" "https://navigatormap.org/data-request/"
+        "wms_metadataurl_format" "text/html"
+        "wms_metadataurl_type" "TC211"
+        "wms_authority" "ProtectedSeas"
+        "wms_authorityurl_name" "ProtectedSeas Navigator"
+        "wms_authorityurl_href" "https://navigatormap.org/"
+        "wms_dataurl_href" "https://services9.arcgis.com/lm7wE8a9YA9rKfzy/arcgis/rest/services/Navigator_AllSites_010925_attributes/FeatureServer/0"
+        "wms_dataurl_format" "application/geo+json"
+      END
+
+      CLASS
+        NAME "1 - Lowest fishing protection"
+        EXPRESSION ([lfp] == 1)
+        STYLE
+          COLOR 160 170 182
+          OUTLINECOLOR 35 35 35
+          WIDTH 1
+        END
+      END
+
+      CLASS
+        NAME "2 - Low fishing protection"
+        EXPRESSION ([lfp] == 2)
+        STYLE
+          COLOR 103 185 226
+          OUTLINECOLOR 35 35 35
+          WIDTH 1
+        END
+      END
+
+      CLASS
+        NAME "3 - Moderate fishing protection"
+        EXPRESSION ([lfp] == 3)
+        STYLE
+          COLOR 39 177 152
+          OUTLINECOLOR 35 35 35
+          WIDTH 1
+        END
+      END
+
+      CLASS
+        NAME "4 - High fishing protection"
+        EXPRESSION ([lfp] == 4)
+        STYLE
+          COLOR 249 177 26
+          OUTLINECOLOR 247 247 247
+          WIDTH 1
+        END
+      END
+
+      CLASS
+        NAME "5 - Highest fishing protection"
+        EXPRESSION ([lfp] == 5)
+        STYLE
+          COLOR 233 73 99
+          OUTLINECOLOR 35 35 35
+          WIDTH 1
+        END
+      END
+  END
+
+END # MAP
