@@ -26,7 +26,11 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
     - Live connection to remote GeoJSON file
 - Ocean Networks Canada: locations of observatories and instruments ([source][4])
     - Live connection to remote GeoJSON data 
-    
+- ProtectedSeas Navigator - All Sites from ProtectedSeas ([source][5])
+    - Synchronised by `/scripts/fetchProtectedSeas.py`
+    - Downloaded in batches and converted to a spatially indexed GeoPackage using GDAL/ogr2ogr
+    - GeoPackage is created automatically if not already present and refreshed monthly on the first day of        each month
+    - Run docker compose up --build on first deployment or after Dockerfile changes. For subsequent starts,       docker compose up can be used.. 
 ## Getting started
 
 1. Download the repository
@@ -37,3 +41,4 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
 [2]: https://www.unoceanprediction.org/en/api/atlas/models
 [3]: https://protocoast.cmcc.it/globalcoast-pilot-sites/data/pilot_sites.json
 [4]: https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/ONCSites_CO2_XYTableToPoint/FeatureServer/0/query?where=1=1&outFields=*&f=geojson
+[5]: https://services9.arcgis.com/lm7wE8a9YA9rKfzy/arcgis/rest/services/Navigator_AllSites_010925_attributes/FeatureServer/0

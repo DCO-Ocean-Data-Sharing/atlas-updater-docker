@@ -18,7 +18,9 @@ services:
         restart: unless-stopped
 
     atlas-updater:
-        image: python:3.11-alpine
+        build:
+            context: .
+            dockerfile: Dockerfile.atlas-updater-gdal
         container_name: atlas_updater
         volumes:
             - ./maps:/maps:rw
@@ -29,8 +31,18 @@ services:
             - |
                 python /scripts/fetchOceanPredictionLayer.py || echo "Initial Ocean Prediction atlas download failed. Retrying on next cron loop."
                 python /scripts/fetchArgo.py || echo "Initial Argo Float layer download failed. Retrying on next cron loop."
-                echo "0 */6 * * * python /scripts/fetchOceanPredictionLayer.py" > /etc/crontabs/root
+
+                if [ ! -f /maps/protectedseas_navigator.gpkg ]; then
+                    python /scripts/fetchProtectedSeas.py || echo "Initial ProtectedSeas download failed. Retrying on next cron loop."
+                else
+                    echo "ProtectedSeas GeoPackage already exists. Skipping initial download."
+                fi
+
+                echo "PATH=/usr/local/bin:/usr/bin:/bin" > /etc/crontabs/root
+                echo "0 */6 * * * python /scripts/fetchOceanPredictionLayer.py" >> /etc/crontabs/root
                 echo "0 */3 * * * python /scripts/fetchArgo.py" >> /etc/crontabs/root
+                echo "0 3 1 * * python /scripts/fetchProtectedSeas.py" >> /etc/crontabs/root
+                
                 exec crond -f -l 2
         restart: unless-stopped
         
