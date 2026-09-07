@@ -20,7 +20,7 @@ MAP
       "wms_title" "UN Ocean Decade Atlas"
       "wms_abstract" "This Web Map Service wraps non-WMS data sources for layers in the UN Ocean Decade's Digital Atlas to allow them to be displayed in the atlas user interface, derived from the EMODnet Central Portal Map Viewer software.'"
       "wms_onlineresource" "http://localhost:8080/?"
-      "wms_srs" "EPSG:4326 EPSG:3857"
+      "wms_srs" "EPSG:4326 EPSG:8857"
       "wms_enable_request" "*"
     END
   END
