@@ -183,6 +183,7 @@ cython_debug/
 # GeoJSON
 #  Data files will be generated at startup and in cron, so should not be committed to the repository
 *.geojson
+maps/*.geojson
 
 # MacOS file system
 .DS_Store
