@@ -50,7 +50,6 @@ MAP
     
     PROJECTION
       "EPSG:4326"
-      "EPSG:8857"
     END
     TEMPLATE "blank.html"
     METADATA
@@ -398,7 +397,6 @@ MAP
   
     PROJECTION
       "EPSG:4326"
-      "EPSG:8857"
     END
     TEMPLATE "blank.html"
     METADATA
@@ -451,7 +449,6 @@ MAP
       
       PROJECTION
         "EPSG:4326"
-        "EPSG:8857"
       END
       TEMPLATE "blank.html"
       METADATA
@@ -578,7 +575,6 @@ MAP
       
       PROJECTION
           "EPSG:4326"
-          "EPSG:8857"
       END
       TEMPLATE "blank.html"
       METADATA
@@ -685,7 +681,6 @@ Operational ocean forecasting combines observations from satellites, buoys, floa
 
       PROJECTION
         "EPSG:4326"
-        "EPSG:8857"
       END
 
       TEMPLATE "blank.html"
