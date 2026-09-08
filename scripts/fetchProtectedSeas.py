@@ -1,4 +1,4 @@
-﻿# FETCHPROTECTEDSEAS - collects the ProtectedSeas Navigator "All Sites" layer
+# FETCHPROTECTEDSEAS - collects the ProtectedSeas Navigator "All Sites" layer
 # for the UN Ocean Decade's Global Digital Atlas.
 #
 # The ArcGIS Feature Service limits standard feature queries, so this script
@@ -67,6 +67,7 @@ def post_request(parameters, retries=3):
 
 
 try:
+    print("Starting ProtectedSeas Navigator layer collection...")
     # Get all record IDs
     idResponse = post_request({
         "where": "1=1",

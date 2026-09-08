@@ -29,9 +29,9 @@ services:
             - /bin/sh
             - -c
             - |
+                pip install pillow
                 python /scripts/fetchOceanPredictionLayer.py || echo "Initial Ocean Prediction atlas download failed. Retrying on next cron loop."
                 python /scripts/fetchArgo.py || echo "Initial Argo Float layer download failed. Retrying on next cron loop."
-
                 if [ ! -f /maps/protectedseas_navigator.gpkg ]; then
                     python /scripts/fetchProtectedSeas.py || echo "Initial ProtectedSeas download failed. Retrying on next cron loop."
                 else
