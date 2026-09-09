@@ -754,36 +754,5 @@ the ProtectedSeas Navigator database. The layer provides information on the loca
         END
       END
   END
-
-# --- Layer 7: Global Ocean Low and Mid Trophic Levels Biomass Content Hindcast ---  
-  
-  LAYER
-      NAME "global_ocean_low_mid_trophic_levels_biomass_content_hindcast"
-      STATUS ON
-      TYPE RASTER
-      DATA "/etc/mapserver/copernicus_ocean_biomass_hindcast.xml"
-      
-      
-      PROJECTION
-        "init=epsg:4326"
-      END
-      
-      METADATA
-          "wms_title" "Global ocean low and mid trophic levels biomass content hindcast"
-          "wms_abstract" "<p>The Low and Mid-Trophic Levels (LMTL) reanalysis for global ocean is produced at CLS on behalf of Global Ocean Marine Forecasting Center. It provides 2D fields of biomass content of zooplankton and six functional groups of micronekton. It uses the LMTL component of SEAPODYM dynamical population model (http://www.seapodym.eu). No data assimilation has been done. This product also contains forcing data: net primary production, euphotic depth, depth of each pelagic layers zooplankton and micronekton inhabit, average temperature and currents over pelagic layers.</p><p><b>Forcings sources:</b></p><ul><li>Ocean currents and temperature (CMEMS multiyear product)</li><li>Net Primary Production computed from chlorophyll a, Sea Surface Temperature and Photosynthetically Active Radiation observations (chlorophyll from CMEMS multiyear product, SST from NOAA NCEI AVHRR-only Reynolds, PAR from INTERIM) and relaxed by model outputs at high latitudes (CMEMS biogeochemistry multiyear product)</li><p><b>Vertical coverage:</b></p><ul><li>Epipelagic layer</li><li>Upper mesopelagic layer</li><li>Lower mesopelagic layer (max. 1000m)</li></ul><p><b>References:</b></p><ul><li>Lehodey P., Murtugudde R., Senina I. (2010). Bridging the gap from ocean models to population dynamics of large marine predators: a model of mid-trophic functional groups. Progress in Oceanography, 84, p. 69-84.</li><li>Lehodey, P., Conchon, A., Senina, I., Domokos, R., Calmettes, B., Jouanno, J., Hernandez, O., Kloser, R. (2015) Optimization of a micronekton model with acoustic data. ICES Journal of Marine Science, 72(5), p. 1399-1412.</li><li>Conchon A. (2016). Modélisation du zooplancton et du micronecton marins. Thèse de Doctorat, Université de La Rochelle, 136 p.</li></ul>"
-        "wms_include_items" "all"
-        "gml_include_items" "all"
-        "wms_attribution_text" "Mercator Ocean International"
-        "wms_attribution_onlineresource" "https://www.mercator-ocean.eu"
-        "wms_metadataurl_href" "https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_BGC_001_033/services"
-        "wms_metadataurl_format" "text/html"
-        "wms_metadataurl_type" "TC211"
-        "wms_authority" "Copernicus Marine Service"
-        "wms_authorityurl_name" "Copernicus Marine Service"
-        "wms_authorityurl_href" "https://marine.copernicus.eu/"
-        "wms_connection_timeout" "60"
-        "wms_extent" "-180 -90 180 90"
-      END
-  END
   
 END # MAP

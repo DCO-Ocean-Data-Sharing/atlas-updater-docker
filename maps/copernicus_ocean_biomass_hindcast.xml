@@ -1,8 +1,0 @@
-<GDAL_WMTS>
-    <GetCapabilitiesUrl>https://wmts.marine.copernicus.eu/teroWmts/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511?request=GetCapabilities&service=WMTS</GetCapabilitiesUrl>
-    <Layer>GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511/zooc</Layer>
-    <Style>cmap:matter</Style>
-    <TileMatrixSet>EPSG:4326</TileMatrixSet>
-    <BandsCount>4</BandsCount>
-    <Cache />
-</GDAL_WMTS>
