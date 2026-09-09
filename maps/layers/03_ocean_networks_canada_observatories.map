@@ -1,0 +1,131 @@
+LAYER
+      NAME "oceannetworkscanada"
+      TYPE POINT
+      STATUS ON
+      SIZEUNITS PIXELS
+      CONNECTIONTYPE OGR
+      
+      TOLERANCE 10
+      TOLERANCEUNITS PIXELS
+      
+      CONNECTION "/vsicurl/https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/ONCSites_CO2_XYTableToPoint/FeatureServer/0/query?where=1=1&outFields=*&f=geojson"
+      DATA "0"
+      
+      CONNECTIONOPTIONS
+        "DRIVER" "GeoJSON"
+      END
+      
+      PROJECTION
+        "EPSG:4326"
+      END
+      TEMPLATE "blank.html"
+      METADATA
+        "wms_title" "Ocean Networks Canada observatory and instrument locations"
+        "wms_abstract" "This map shows the location of the ocean observatories deployed by Ocean Networks Canada (ONC). This network collects data on physical, chemical, biological, and geological aspects of the Pacific, Arctic, and Atlantic oceans. These observatories support research on complex Earth processes in ways not previously possible, providing scientists, communities, and decision-makers with access to free, open, continuous, long-time series data from anywhere in the world, in real-time."
+        "wms_extent" "-180 -90 180 90"
+        "wms_include_items" "all"
+        "gml_include_items" "all"
+        "wms_attribution_text" "Ocean Networks Canada's still images; audio files; video; maps, graphics and all content not hosted on ONC data portals (Oceans 3.0 and ERDDAP) is, in general, copyrighted in compliance with the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 License."
+          "wms_attribution_onlineresource" "https://www.oceannetworks.ca/multimedia/"
+          "wms_metadataurl_href"   "https://www.arcgis.com/home/item.html?id=fcea4e5f087f41c58bcc5e51b13fffa1#overview"
+          "wms_metadataurl_format" "text/html"
+          "wms_metadataurl_type"   "TC211"
+          "wms_authority" "Ocean Networks Canada"
+          "wms_authorityurl_name" "Ocean Networks Canada"
+          "wms_authorityurl_href" "https://www.oceannetworks.ca"
+          "wms_dataurl_href"   "https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/ONCSites_CO2_XYTableToPoint/FeatureServer/0/query?where=1=1&outFields=*&f=geojson"
+          "wms_dataurl_format" "application/geo+json"
+      END
+
+      CLASSITEM "devicecategoryna"
+            
+      CLASS
+      NAME "Community Observatory"
+      EXPRESSION "Community Observatory"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 232 115 74
+        OUTLINECOLOR 232 115 74
+        WIDTH 1
+      END
+    END
+      CLASS
+      NAME "Earthquake Early Warning"
+      EXPRESSION "Earthquake Early Warning"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 232 115 74
+        OUTLINECOLOR 0 0 0
+        WIDTH 3
+      END
+    END
+    CLASS
+      NAME "Ferries"
+      EXPRESSION "Ferries"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 26 54 104
+        OUTLINECOLOR 26 54 104
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Instrument"
+      EXPRESSION "Instrument"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 255 255 255
+        OUTLINECOLOR 10 37 64
+        WIDTH 3
+      END
+    END
+    CLASS
+      NAME "Mobile Asset"
+      EXPRESSION "Mobile Asset"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 252 192 63
+        OUTLINECOLOR 252 192 63
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Mooring"
+      EXPRESSION "Mooring"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 255 255 255
+        OUTLINECOLOR 252 192 63
+        WIDTH 3
+      END
+    END
+    CLASS
+      NAME "Node"
+      EXPRESSION "Node"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 233 76 56
+        OUTLINECOLOR 233 76 56
+        WIDTH 2
+      END
+    END
+    CLASS
+      NAME "Oceanographic Radar System"
+      EXPRESSION "Oceanographic Radar System"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 252 192 63
+        OUTLINECOLOR 252 192 63
+        WIDTH 2
+      END
+    END
+
+  END

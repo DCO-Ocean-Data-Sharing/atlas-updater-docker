@@ -1,0 +1,44 @@
+LAYER
+      NAME "dccoceanpredictionforecastingsystemsatlas"
+      TYPE POLYGON
+      STATUS ON
+      
+      CONNECTIONTYPE OGR
+      CONNECTION "/etc/mapserver/ocean_prediction_atlas.geojson"
+      
+      DATA "ocean_prediction_atlas" 
+      
+      PROJECTION
+          "EPSG:4326"
+      END
+      TEMPLATE "blank.html"
+      METADATA
+        "wms_title" "Decade Collaborative Centre for Ocean Prediction ocean forecasting systems atlas"
+        "wms_abstract" "This map shows the Ocean Forecasting Systems that provide ocean prediction services and modelling. It allows viewers to compare the distribution and characteristics of forecasting capacity around the world and to identify systems relevant to specific ocean regions or uses. It indicates the system title, responsible organisations, data policy, numerical and atmospheric models, main applications, variables used, and related links where available. This layer is extracted from the Atlas produced by the DCC for Ocean Prediction and its community in support of the Ocean Decade goal of a predicted ocean.
+Operational ocean forecasting combines observations from satellites, buoys, floats, ships and other platforms with numerical models and data assimilation methods to describe the present state of the ocean and estimate how conditions may evolve."
+        "wms_extent" "-180 -90 180 90"
+        "wms_include_items" "all"
+        "gml_include_items" "all"
+        "wms_attribution_text" "Decade Collaborative Centre for Ocean Prediction"
+          "wms_attribution_onlineresource" "https://www.unoceanprediction.org/en/homepage"
+          "wms_metadataurl_href"   "https://www.unoceanprediction.org/en/atlas/models"
+          "wms_metadataurl_format" "text/html"
+          "wms_metadataurl_type"   "TC211"
+          "wms_authority" "Decade Collaborative Centre for Ocean Prediction"
+          "wms_authorityurl_name" "Decade Collaborative Centre for Ocean Prediction"
+          "wms_authorityurl_href" "https://www.unoceanprediction.org/en/homepage"
+          "wms_dataurl_href"   "https://www.unoceanprediction.org/en/api/atlas/models"
+          "wms_dataurl_format" "application/json"
+      END
+
+      CLASSITEM "typeOfSystem"
+      CLASS
+          NAME "Biogeochemical"        
+          STYLE
+            COLOR 209 159 42
+            OUTLINECOLOR 100 100 100
+            WIDTH 1
+            OPACITY 60
+          END
+      END  
+    END

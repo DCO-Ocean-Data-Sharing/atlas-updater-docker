@@ -1,0 +1,46 @@
+LAYER
+    NAME "argofloats"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "/etc/mapserver/argo_floats.geojson"
+    DATA "argo_floats"
+  
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Argo float locations"
+      "wms_abstract" "This map shows the positions over the last 10 days of autonomous profiling floats (Argo) operating as part of the international Argo observing programme. This layer is extracted from IFREMER’s Global Data Assembly Centres (GDAC), which manage and distribute data from these instruments in real time. Argo floats repeatedly descend, drift and rise through the ocean while measuring pressure, temperature and salinity; specialised Deep Argo and Biogeochemical Argo floats can observe deeper waters or additional biological and chemical properties. The observations are transmitted once a float reaches the surface and contribute to understanding ocean heat, freshwater, circulation, climate variability and change, as well as to ocean analysis and forecasting."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_attribution_text" "These data were collected and made freely available by the International Argo Program and the national programs that contribute to it.  (https://argo.ucsd.edu,  https://www.ocean-ops.org).  The Argo Program is part of the Global Ocean Observing System. Argo (2000). Argo float data and metadata from Global Data Assembly Centre (Argo GDAC). SEANOE. https://doi.org/10.17882/42182"
+      "wms_attribution_onlineresource" "https://argo.ucsd.edu/data/acknowledging-argo/"
+      "wms_metadataurl_href"   "https://erddap.ifremer.fr/erddap/metadata/iso19115/xml/ArgoFloats_iso19115.xml"
+      "wms_metadataurl_format" "application/xml"
+      "wms_metadataurl_type"   "TC211"
+      "wms_authority" "Argo @ University of California, San Diego"
+      "wms_authorityurl_name" "Argo @ University of California, San Diego"
+      "wms_authorityurl_href" "https://argo.ucsd.edu"
+      "wms_dataurl_href"   "https://erddap.ifremer.fr/erddap/tabledap/ArgoFloats.geoJson?platform_number,project_name,platform_type,latitude,longitude&time%3E%3Dnow-10days&time%3Cnow"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "Argo Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 0 0 0
+        OUTLINECOLOR 255 255 255
+        WIDTH 5
+      END
+    END
+  END
