@@ -1,6 +1,6 @@
 {
   "scripts": [
-    "automationPythonTest.py"
+    "automationPythonTest.py",
     "automationPythonTest2.py"
   ]
 }
