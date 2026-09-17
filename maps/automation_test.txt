@@ -1,5 +1,5 @@
 Atlas automation test
 
-Version: 2
+Version: 3
 
 This file is used to test automatic synchronisation from GitHub.
