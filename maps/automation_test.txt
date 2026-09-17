@@ -1,0 +1,5 @@
+Atlas automation test
+
+Version: 1
+
+This file is used to test automatic synchronisation from GitHub.
