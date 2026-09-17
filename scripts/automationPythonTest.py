@@ -1,1 +1,1 @@
-print("Atlas Python automation test - Version 1")
+print("Atlas Python automation test - Version 2")
