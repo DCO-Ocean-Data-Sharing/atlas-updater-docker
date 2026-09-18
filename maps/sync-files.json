@@ -1,0 +1,10 @@
+{
+  "files": [
+    "symbols/circle.map",
+    "layers/01_coastpredict_pilot_sites.map",
+    "layers/02_argo_float_locations.map",
+    "layers/03_ocean_networks_canada_observatories.map",
+    "layers/04_ocean_prediction_systems_atlas.map",
+    "layers/05_protected_seas_navigator.map"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "scripts": [
+    "fetchArgo.py",
+    "fetchOceanPredictionLayer.py",
+    "fetchProtectedSeas.py"
+  ]
+}
