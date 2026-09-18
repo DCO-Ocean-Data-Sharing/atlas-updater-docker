@@ -1,6 +1,7 @@
 {
   "scripts": [
-    "automationPythonTest.py",
-    "automationPythonTest2.py"
+    "fetchArgo.py",
+    "fetchOceanPredictionLayer.py",
+    "fetchProtectedSeas.py"
   ]
 }
