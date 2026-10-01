@@ -16,6 +16,9 @@ services:
         ports:
             - "8080:80"
         restart: unless-stopped
+        depends_on:
+            - copernicus-bridge
+            - atlas-updater
 
     atlas-updater:
         build:
@@ -44,6 +47,18 @@ services:
                 
                 exec crond -f -l 2
         restart: unless-stopped
+
+    copernicus-bridge:
+        container_name: copernicus_bridge
+        image: python:3.11-slim
+        working_dir: /app
+        command: >
+          sh -c "pip install fastapi uvicorn httpx matplotlib pillow numpy && 
+             uvicorn copernicus-bridge:app --host 0.0.0.0 --port 90"
+        volumes:
+            - ./scripts/copernicus-bridge.py:/app/copernicus-bridge.py
+        networks:
+            - default
         
 networks:
     default:

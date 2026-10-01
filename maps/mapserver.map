@@ -11,7 +11,7 @@ MAP
   DEBUG 5
   
   PROJECTION
-    "init=epsg:8857"
+    "init=epsg:3857"
   END
   
   WEB
@@ -30,6 +30,15 @@ MAP
   INCLUDE "layers/02_argo_float_locations.map"
   INCLUDE "layers/03_ocean_networks_canada_observatories.map"
   INCLUDE "layers/04_ocean_prediction_systems_atlas.map"
-  INCLUDE "layers/05_protected_seas_navigator.map"  
+  INCLUDE "layers/05_protected_seas_navigator.map"
+  INCLUDE "layers/06_copernicus_biomass_hindcast_epipelagic_micronekton.map"
+  INCLUDE "layers/07_copernicus_biomass_hindcast_highly_migrant_lower_mesopelagic_micronekton.map"
+  INCLUDE "layers/08_copernicus_biomass_hindcast_lower_mesopelagic_micronekton.map"
+  INCLUDE "layers/09_copernicus_biomass_hindcast_migrant_lower_mesopelagic_micronekton.map"
+  INCLUDE "layers/10_copernicus_biomass_hindcast_migrant_upper_mesopelagic_micronekton.map"
+  INCLUDE "layers/11_copernicus_biomass_hindcast_upper_mesopelagic_micronekton.map"
+  INCLUDE "layers/12_copernicus_biomass_hindcast_net_primary_productivity_biomass_as_carbon_in_seawater.map"
+  INCLUDE "layers/13_copernicus_biomass_hindcast_euphotic_zone_depth.map"
+  INCLUDE "layers/14_copernicus_biomass_hindcast_mass_content_zooplankton_as_carbon_in_seawater.map"
   
 END

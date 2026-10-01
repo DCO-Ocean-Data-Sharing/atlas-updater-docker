@@ -2,16 +2,22 @@
 
 A Docker-based approach to keeping background data for the UN Ocean Decade Atlas updated
 
-- Author: [adamml](https://github.com/adamml)
-- Version: 1.0.0
+- Authors:
+    - [adamml](https://github.com/adamml)
+    - [ninaharmse777](https://github.com/ninaharmse777)
+    - [mlopezvelosa](https://github.com/mlopezvelosa)
+- Version: 1.0.1
+    - 1.0.1 adds a bridge between Mapserver WMS and Copernicus WMTS
 
 ## Containers
 
 1. mapserver
     - Runs a Mapserver instance to allow Web Map Services to be published for geospatial data that is used in the UN Ocean Decade atlas, but which is originally published in other formats.
 1. atlas-update
-    - Manages several small Python scripts to keep layers updated, and runs them on start-up and regularly through cron jobs
-
+    - Manages several small Python scripts to keep layers updated, and runs them on start-up and regularly through cron jobs.
+1. copernicus-bridge
+    - Runs a Python micro-service to act as a bridge between Mapserver WMS calls and Copernicus' WMTS implementation.
+    
 ## Layers managed
 
 Licensing and attribution of the managed layers is handled in the `/maps/mapserver.map` file in this repository
@@ -31,6 +37,19 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
     - Downloaded in batches and converted to a spatially indexed GeoPackage using GDAL/ogr2ogr
     - GeoPackage is created automatically if not already present and refreshed monthly on the first day of each month
     - Run docker compose up --build on first deployment or after Dockerfile changes. For subsequent starts, docker compose up can be used.
+- Copernicus Global ocean low and mid trophic levels biomass content hindcast
+    - Live connection via the `copernicus-bridge` container from the Copernicus Marine Web Map Tile Service
+    - [Source][6]
+    - Layers:
+        - Ocean wet mass content of epipelagic micronekton
+        - Ocean wet mass content of highly migrant lower mesopelagic micronekton
+        - Ocean wet mass content of lower mesopelagic micronekton
+        - Ocean wet mass content of migrant lower mesopelagic micronekton
+        - Ocean wet mass content of migrant upper mesopelagic micronekton
+        - Ocean wet mass content of upper mesopelagic micronekton
+        - Net primary productivity of biomass expressed as carbon in sea water
+        - Euphotic zone depth
+        - Mass content of zooplankton expressed as carbon in sea water
 
 ## Getting started
 
@@ -43,3 +62,4 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
 [3]: https://protocoast.cmcc.it/globalcoast-pilot-sites/data/pilot_sites.json
 [4]: https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/ONCSites_CO2_XYTableToPoint/FeatureServer/0/query?where=1=1&outFields=*&f=geojson
 [5]: https://services9.arcgis.com/lm7wE8a9YA9rKfzy/arcgis/rest/services/Navigator_AllSites_010925_attributes/FeatureServer/0
+[6]: https://wmts.marine.copernicus.eu/teroWmts/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511?request=GetCapabilities&service=WMTS
