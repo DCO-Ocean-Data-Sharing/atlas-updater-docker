@@ -1,43 +1,84 @@
-import json
 import os
 import urllib.request
+import xml.etree.ElementTree as ET
+from urllib.parse import urlparse
 
-BASE_URL = "https://raw.githubusercontent.com/DCO-Ocean-Data-Sharing/atlas-updater-docker/refs/heads/automation-test/"
+SITEMAP_URL = "https://dco-ocean-data-sharing.github.io/atlas-updater-docker/sitemap.xml"
+SITE_PREFIX = "/atlas-updater-docker/"
 
-# Get the list of supporting MapServer files to synchronise
-map_files_url = BASE_URL + "maps/sync-files.json"
 
-with urllib.request.urlopen(map_files_url) as response:
-    map_config = json.load(response)
+def get_sitemap_urls():
+    print(f"Reading sitemap from {SITEMAP_URL}")
 
-# Synchronise supporting MapServer files first
-for file_name in map_config["files"]:
-    file_url = BASE_URL + "maps/" + file_name
-    file_destination = "/maps/" + file_name
+    with urllib.request.urlopen(SITEMAP_URL) as response:
+        sitemap_data = response.read()
 
-    os.makedirs(os.path.dirname(file_destination), exist_ok=True)
-    urllib.request.urlretrieve(file_url, file_destination)
-    print(f"Synchronised maps/{file_name}")
+    root = ET.fromstring(sitemap_data)
+
+    urls = []
+
+    for element in root.iter():
+        if element.tag.endswith("loc") and element.text:
+            urls.append(element.text.strip())
+
+    return urls
+
+
+def get_repository_path(url):
+    parsed_url = urlparse(url)
+    path = parsed_url.path
+
+    if SITE_PREFIX not in path:
+        return None
+
+    return path.split(SITE_PREFIX, 1)[1]
+
+
+def synchronise_file(url, repository_path):
+    if repository_path.startswith("maps/"):
+        destination = "/" + repository_path
+
+    elif repository_path.startswith("scripts/"):
+        destination = "/" + repository_path
+
+    else:
+        return
+
+    os.makedirs(os.path.dirname(destination), exist_ok=True)
+
+    urllib.request.urlretrieve(url, destination)
+
+    print(f"Synchronised {repository_path}")
+
+
+sitemap_urls = get_sitemap_urls()
+
+files_to_sync = []
+mapserver_url = None
+
+for url in sitemap_urls:
+    repository_path = get_repository_path(url)
+
+    if not repository_path:
+        continue
+
+    if repository_path == "maps/mapserver.map":
+        mapserver_url = url
+
+    elif repository_path.startswith("maps/") or repository_path.startswith("scripts/"):
+        files_to_sync.append((url, repository_path))
+
+
+# Synchronise supporting files and scripts first
+for url, repository_path in files_to_sync:
+    synchronise_file(url, repository_path)
+
 
 # Synchronise the main MapServer configuration last
-urllib.request.urlretrieve(
-    BASE_URL + "maps/mapserver.map",
-    "/maps/mapserver.map"
-)
-print("Synchronised maps/mapserver.map")
+if mapserver_url:
+    synchronise_file(mapserver_url, "maps/mapserver.map")
+else:
+    raise RuntimeError("maps/mapserver.map was not found in the sitemap.")
 
-# Get the list of Python scripts to synchronise
-scripts_list_url = BASE_URL + "scripts/scripts.json"
 
-with urllib.request.urlopen(scripts_list_url) as response:
-    scripts_config = json.load(response)
-
-# Synchronise each listed Python script
-for script_name in scripts_config["scripts"]:
-    script_url = BASE_URL + "scripts/" + script_name
-    script_destination = "/scripts/" + script_name
-
-    urllib.request.urlretrieve(script_url, script_destination)
-    print(f"Synchronised scripts/{script_name}")
-
-print("GitHub synchronisation completed successfully.")
+print("GitHub sitemap synchronisation completed successfully.")
