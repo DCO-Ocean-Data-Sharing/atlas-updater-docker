@@ -1,0 +1,32 @@
+LAYER
+  NAME "lower_mesopelagic_micronekton"
+  TYPE RASTER
+  STATUS ON
+  CONNECTIONTYPE WMS
+  
+  CONNECTION "http://copernicus_bridge:90/?" 
+  
+  PROJECTION
+    "init=epsg:3857"
+  END
+  
+  PROCESSING "LOAD_WHOLE_IMAGE=YES"
+  PROCESSING "RESAMPLE=BILINEAR"
+  
+  METADATA
+    "wms_title"          "Ocean wet mass content of lower mesopelagic micronekton"
+    "wms_name"           "GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511/mnkc_lmeso"
+    "wms_format"         "image/png"
+    "wms_server_version"  "1.3.0"
+    "wms_timeextent"     "1998-01-01/2025-06-30/P1D"
+    "wms_timeitem"       "TIME"
+    "wms_srs"                 "EPSG:3857"
+    "wms_extent"              "-20037508.34 -20037508.34 20037508.34 20037508.34"
+    "wms_connection_request_metadata" "LAYER STYLE GROUP"
+    "wms_layer"          "mnkc_lmeso"
+    "wms_style"          "cmap:dense"
+    "wms_layer_group"           "/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511"
+    "wms_group_title"           "Global ocean low and mid trophic levels biomass content hindcast"
+  END
+  
+END

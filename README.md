@@ -2,93 +2,54 @@
 
 A Docker-based approach to keeping background data, MapServer configuration and updater scripts for the UN Ocean Decade Atlas updated and synchronised.
 
-- Docker implementation author: [adamml](https://github.com/adamml)
-- GitHub synchronisation and automation: [ninaharmse777](https://github.com/ninaharmse777)
-- Version: 1.0.0
+- Authors:
+    - [adamml](https://github.com/adamml)
+    - [ninaharmse777](https://github.com/ninaharmse777)
+    - [mlopezvelosa](https://github.com/mlopezvelosa)
+- Version: 1.0.1
+    - 1.0.1 adds a bridge between Mapserver WMS and Copernicus WMTS
 
 ## Containers
 
-1. **mapserver** - Publishes Web Map Services for geospatial data used in the UN Ocean Decade Atlas.
-2. **atlas-updater** - Runs Python scripts to keep data updated and synchronises MapServer configuration and approved Python updater scripts from this repository.
-
+1. mapserver
+    - Runs a Mapserver instance to allow Web Map Services to be published for geospatial data that is used in the UN Ocean Decade atlas, but which is originally published in other formats.
+1. atlas-update
+    - Manages several small Python scripts to keep layers updated, and runs them on start-up and regularly through cron jobs.
+1. copernicus-bridge
+    - Runs a Python micro-service to act as a bridge between Mapserver WMS calls and Copernicus' WMTS implementation.
+    
 ## Layers managed
 
-Licensing and attribution of managed layers is handled in `/maps/mapserver.map`.
+Licensing and attribution of the managed layers is handled in the `/maps/mapserver.map` file in this repository
 
-- **Argo float locations** from Ifremer Erddap ([source][1])
-  - Updated by `/scripts/fetchArgo.py` every 3 hours
-- **Ocean Forecasting Systems Atlas** from Decade Collaborative Centre for Ocean Prediction / Mercator Ocean International ([source][2])
-  - Updated by `/scripts/fetchOceanPredictionLayer.py` every 6 hours
-- **GlobalCoast pilot sites** from CMCC ([source][3])
-  - Live connection to remote GeoJSON
-- **Ocean Networks Canada observatories and instruments** ([source][4])
-  - Live connection to remote GeoJSON
-- **ProtectedSeas Navigator - All Sites** ([source][5])
-  - Updated by `/scripts/fetchProtectedSeas.py` monthly
-  - Converted to a spatially indexed GeoPackage using GDAL/ogr2ogr
-
-## Automated GitHub synchronisation
-
-`/scripts/syncFromGitHub.py` synchronises MapServer configuration and Python updater scripts from this repository every 6 hours.
-
-MapServer supporting files to synchronise are listed in:
-
-`/maps/sync-files.json`
-
-Python updater scripts to synchronise are listed in:
-
-`/scripts/scripts.json`
-
-MapServer supporting files are downloaded first and `/maps/mapserver.map` is updated last. This ensures that required layer and symbol files are available before the main configuration changes.
-
-The synchronisation uses only the Python standard library and adds no new dependencies. Existing dependencies, such as GDAL for ProtectedSeas, remain unchanged.
-
-## Practical examples for future handover
-
-Once the synchronisation setup is deployed, most routine Atlas updates can be managed through the repository without rebuilding or redeploying the Docker containers.
-
-### Example 1: Update an existing MapServer layer
-
-If the configuration of an existing layer needs to change, update its `.map` file.
-
-For example:
-
-`/maps/layers/03_ocean_networks_canada_observatories.map`
-
-Because the file is already listed in `/maps/sync-files.json`, the updated version will be synchronised automatically.
-
-### Example 2: Add a new MapServer layer
-
-To add a new layer, for example `06_new_layer.map`:
-
-1. Add the new file under `/maps/layers`
-2. Add `layers/06_new_layer.map` to `/maps/sync-files.json`
-3. Reference the new layer file in `/maps/mapserver.map`
-
-The new configuration will then be picked up through the scheduled synchronisation.
-
-### Example 3: Update an existing data fetcher
-
-If an existing data source changes, update its corresponding fetch script.
-
-For example:
-
-`/scripts/fetchArgo.py`
-
-Because the script is already listed in `/scripts/scripts.json`, the updated version will be synchronised automatically. Its existing cron schedule will continue to run as normal.
-
-### Adding a new scheduled data source
-
-If a completely new data source requires its own Python fetch script and schedule, add the script to `/scripts`, list it in `/scripts/scripts.json`, and add its schedule to `docker-compose.yml`.
-
-Changes to `docker-compose.yml` need to be applied to the deployed Docker environment.
-
-## Current schedules
-
-- GitHub synchronisation: every 6 hours
-- Argo floats: every 3 hours
-- Ocean Forecasting Systems Atlas: every 6 hours
-- ProtectedSeas Navigator: monthly on the first day of the month
+- Last 10 days of Argo float locations from Ifremer Erddap ([source][1])
+    - Synchronised by `/scripts/fetchArgo.py`
+    - Cron job runs every three hours to synchronise the data
+- Ocean Forecasting Systems atlas from Decade Collaborative Centre for Ocean Prediction / Mercator Ocean International ([source][2])
+    - Synchronised by `/scripts/fetchOceanPredictionLayer.py`
+    - Cron job runs every six hours to synchronise the data
+- GlobalCoast pilot sites from CMCC ([source][3])
+    - Live connection to remote GeoJSON file
+- Ocean Networks Canada: locations of observatories and instruments ([source][4])
+    - Live connection to remote GeoJSON data 
+- ProtectedSeas Navigator - All Sites from ProtectedSeas ([source][5])
+    - Synchronised by `/scripts/fetchProtectedSeas.py`
+    - Downloaded in batches and converted to a spatially indexed GeoPackage using GDAL/ogr2ogr
+    - GeoPackage is created automatically if not already present and refreshed monthly on the first day of each month
+    - Run docker compose up --build on first deployment or after Dockerfile changes. For subsequent starts, docker compose up can be used.
+- Copernicus Global ocean low and mid trophic levels biomass content hindcast
+    - Live connection via the `copernicus-bridge` container from the Copernicus Marine Web Map Tile Service
+    - [Source][6]
+    - Layers:
+        - Ocean wet mass content of epipelagic micronekton
+        - Ocean wet mass content of highly migrant lower mesopelagic micronekton
+        - Ocean wet mass content of lower mesopelagic micronekton
+        - Ocean wet mass content of migrant lower mesopelagic micronekton
+        - Ocean wet mass content of migrant upper mesopelagic micronekton
+        - Ocean wet mass content of upper mesopelagic micronekton
+        - Net primary productivity of biomass expressed as carbon in sea water
+        - Euphotic zone depth
+        - Mass content of zooplankton expressed as carbon in sea water
 
 ## Getting started
 
@@ -101,3 +62,4 @@ Changes to `docker-compose.yml` need to be applied to the deployed Docker enviro
 [3]: https://protocoast.cmcc.it/globalcoast-pilot-sites/data/pilot_sites.json
 [4]: https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/ONCSites_CO2_XYTableToPoint/FeatureServer/0/query?where=1=1&outFields=*&f=geojson
 [5]: https://services9.arcgis.com/lm7wE8a9YA9rKfzy/arcgis/rest/services/Navigator_AllSites_010925_attributes/FeatureServer/0
+[6]: https://wmts.marine.copernicus.eu/teroWmts/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511?request=GetCapabilities&service=WMTS
