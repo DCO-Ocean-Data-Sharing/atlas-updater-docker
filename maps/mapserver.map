@@ -40,5 +40,7 @@ MAP
   INCLUDE "layers/12_copernicus_biomass_hindcast_net_primary_productivity_biomass_as_carbon_in_seawater.map"
   INCLUDE "layers/13_copernicus_biomass_hindcast_euphotic_zone_depth.map"
   INCLUDE "layers/14_copernicus_biomass_hindcast_mass_content_zooplankton_as_carbon_in_seawater.map"
+  INCLUDE "layers/15_gebco_latest_shaded_relief.map"
+  INCLUDE "layers/16_gebco_latest_colour_elevation.map"
   
 END
