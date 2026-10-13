@@ -1,0 +1,25 @@
+LAYER
+  NAME "gebco_latest_shaded_relief"
+  TYPE RASTER
+  STATUS ON
+  CONNECTIONTYPE WMS
+  CONNECTION "https://wms.gebco.net/mapserv?"
+  PROJECTION
+    "init=epsg:4326"
+  END
+  METADATA
+    "wms_title" "GEBCO Global Bathymetry and Topography - Shaded Relief (Latest)"
+    "wms_abstract" "GEBCO latest global shaded relief, depicting seafloor bathymetry and terrestrial surface elevation. Remote WMS imagery, not numeric depth values. Not for navigation."
+    "wms_name" "GEBCO_LATEST"
+    "wms_server_version" "1.3.0"
+    "wms_format" "image/png"
+    "wms_srs" "EPSG:4326"
+    "wms_extent" "-180 -90 180 90"
+    "wms_connectiontimeout" "60"
+    "wms_attribution_text" "GEBCO Compilation Group. GEBCO latest grid. Check GEBCO for current release attribution and citation."
+    "wms_attribution_onlineresource" "https://www.gebco.net/"
+    "wms_metadataurl_href" "https://www.gebco.net/data-products/gebco-web-services/web-map-service"
+    "wms_metadataurl_format" "text/html"
+    "wms_metadataurl_type" "TC211"
+  END
+END

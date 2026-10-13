@@ -1,0 +1,25 @@
+LAYER
+  NAME "gebco_latest_colour_elevation"
+  TYPE RASTER
+  STATUS ON
+  CONNECTIONTYPE WMS
+  CONNECTION "https://wms.gebco.net/mapserv?"
+  PROJECTION
+    "init=epsg:4326"
+  END
+  METADATA
+    "wms_title" "GEBCO Global Bathymetry and Topography - Colour-Coded Elevation (Latest)"
+    "wms_abstract" "GEBCO latest global colour-coded bathymetry and elevation. Colour shading is upstream WMS imagery; an authoritative numerical colour-to-depth legend is not yet available through this configuration. Not for navigation."
+    "wms_name" "GEBCO_LATEST_2"
+    "wms_server_version" "1.3.0"
+    "wms_format" "image/png"
+    "wms_srs" "EPSG:4326"
+    "wms_extent" "-180 -90 180 90"
+    "wms_connectiontimeout" "60"
+    "wms_attribution_text" "GEBCO Compilation Group. GEBCO latest grid. Check GEBCO for current release attribution and citation."
+    "wms_attribution_onlineresource" "https://www.gebco.net/"
+    "wms_metadataurl_href" "https://www.gebco.net/data-products/gebco-web-services/web-map-service"
+    "wms_metadataurl_format" "text/html"
+    "wms_metadataurl_type" "TC211"
+  END
+END
