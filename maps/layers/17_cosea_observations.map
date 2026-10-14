@@ -1,0 +1,36 @@
+LAYER
+  NAME "cosea_observations"
+  TYPE POINT
+  STATUS ON
+  CONNECTIONTYPE OGR
+  CONNECTION "/etc/mapserver/cosea_observations.geojson"
+  DATA "cosea_observations"
+  PROJECTION
+    "EPSG:4326"
+  END
+  TEMPLATE "blank.html"
+  TOLERANCE 8
+  TOLERANCEUNITS PIXELS
+  METADATA
+    "wms_title" "COSEA: citizen science marine observations"
+    "wms_abstract" "Georeferenced citizen-science observations submitted through the COSEA project on SPOTTERON. Records include observation locations, dates and category identifiers. Observations are contributed by participants and are not independently verified by the Atlas."
+    "wms_srs" "EPSG:4326"
+    "wms_extent" "-180 -90 180 90"
+    "wms_include_items" "all"
+    "gml_include_items" "all"
+    "wms_attribution_text" "COSEA / SPOTTERON (UN Ocean Decade endorsed Action)."
+    "wms_attribution_onlineresource" "https://www.spotteron.com/cosea/info"
+    "wms_dataurl_href" "https://www.spotteron.com/api/v2.4/spots?filter%5Btopic_id%5D=63"
+    "wms_dataurl_format" "application/json"
+  END
+  CLASS
+    NAME "COSEA observation"
+    STYLE
+      SYMBOL "circle"
+      SIZE 8
+      COLOR 38 153 163
+      OUTLINECOLOR 255 255 255
+      WIDTH 1
+    END
+  END
+END
