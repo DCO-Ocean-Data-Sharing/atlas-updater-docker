@@ -12,8 +12,8 @@ LAYER
   TOLERANCE 8
   TOLERANCEUNITS PIXELS
   METADATA
-    "wms_title" "COSEA: citizen science marine observations"
-    "wms_abstract" "This map shows citizen-science observations of abandoned, wrecked, derelict and potentially non-seaworthy vessels in coastal and marine environments, collected through The Floating Stories Lab / ReTISS Mapping Bad Boats initiative. Reported vessel locations, types and classifications highlight where damaged or abandoned boats may affect nearby habitats and coastal communities. It helps users explore the distribution of reported vessels and better understand potential environmental and social concerns. The information is based on public observations and does not represent a verified or comprehensive inventory of vessels."
+    "wms_title" "COSEA (Collaborative Sea Action): Citizen science marine observations"
+    "wms_abstract" "This map shows marine and coastal observations shared by citizen scientists through the COSEA project on SPOTTERON. Individual locations and observation dates highlight where participants have reported marine life, environmental conditions and coastal activities. It helps users explore the geographic distribution of observations and understand how community participation contributes to knowledge of marine environments. The records are participant-submitted and do not represent a systematic survey or independently verified assessment of ocean conditions."
     "wms_srs" "EPSG:4326"
     "wms_extent" "-180 -90 180 90"
     "wms_include_items" "all"
