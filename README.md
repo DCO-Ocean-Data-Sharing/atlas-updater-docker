@@ -57,6 +57,10 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
     - Synchronised by `/scripts/fetchMappingBadBoats.py`
     - Coastal vessel observations, including vessel type, classification and nearby habitat, provided as GeoJSON point features
     - Cron job runs weekly to synchronise new and updated observations
+- COSEA citizen-science marine observations from SPOTTERON ([source][9])
+    - Synchronised by `/scripts/fetchCOSEA.py`
+    - Georeferenced marine observations, including observation dates and category identifiers, provided as GeoJSON point features
+    - Cron job runs weekly to synchronise new and updated observations
 
 ## Getting started
 
@@ -72,3 +76,4 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
 [6]: https://wmts.marine.copernicus.eu/teroWmts/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511?request=GetCapabilities&service=WMTS
 [7]: https://www.gebco.net/data-products/gebco-web-services/web-map-service
 [8]: https://services-eu1.arcgis.com/APM8FyQ4IgTmRlob/arcgis/rest/services/survey123_523fa2f55e7b42ee8752f33033616991_results/FeatureServer/0
+[9]: https://www.spotteron.com/cosea/info
