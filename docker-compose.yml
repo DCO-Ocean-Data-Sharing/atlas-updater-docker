@@ -44,6 +44,7 @@ services:
                 echo "0 */6 * * * python /scripts/fetchOceanPredictionLayer.py" >> /etc/crontabs/root
                 echo "0 */3 * * * python /scripts/fetchArgo.py" >> /etc/crontabs/root
                 echo "0 3 1 * * python /scripts/fetchProtectedSeas.py" >> /etc/crontabs/root
+                echo "0 3 1 1,4,7,10 * python /scripts/fetchGEBCO.py" >> /etc/crontabs/root
                 
                 exec crond -f -l 2
         restart: unless-stopped
