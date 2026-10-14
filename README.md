@@ -38,8 +38,7 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
     - GeoPackage is created automatically if not already present and refreshed monthly on the first day of each month
     - Run docker compose up --build on first deployment or after Dockerfile changes. For subsequent starts, docker compose up can be used.
 - Copernicus Global ocean low and mid trophic levels biomass content hindcast
-    - Live connection via the `copernicus-bridge` container from the Copernicus Marine Web Map Tile Service
-    - [Source][6]
+    - Live connection via the `copernicus-bridge` container from the Copernicus Marine Web Map Tile Service [Source][6]
     - Layers:
         - Ocean wet mass content of epipelagic micronekton
         - Ocean wet mass content of highly migrant lower mesopelagic micronekton
