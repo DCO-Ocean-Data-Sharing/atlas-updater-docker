@@ -1,10 +1,3 @@
-
-# FETCHGEBCO - checks the GEBCO Latest shaded-relief WMS for the UN Ocean Decade's Global Digital Atlas
-# The layer connects directly to GEBCO's WMS
-# data download is required.
-# :date: 2026-10-14
-# :version: 1.0.0
-
 import urllib.request
 import urllib.error
 import xml.etree.ElementTree as ET
