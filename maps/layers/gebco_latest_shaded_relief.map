@@ -1,0 +1,27 @@
+LAYER
+  NAME "gebco_latest_shaded_relief"
+  TYPE RASTER
+  STATUS ON
+  CONNECTIONTYPE WMS
+  CONNECTION "https://wms.gebco.net/mapserv?"
+
+  PROJECTION
+    "init=epsg:4326"
+  END
+
+  METADATA
+    "wms_title" "GEBCO Global Bathymetry and Topography - Shaded Relief (Latest)"
+    "wms_abstract" "Global shaded-relief imagery of ocean bathymetry and land topography provided by GEBCO's Latest WMS. This layer visualises the GEBCO grid using ice surface elevation over ice-covered areas. The imagery is for visualisation purposes only and must not be used for navigation or safety at sea."
+    "wms_name" "GEBCO_LATEST"
+    "wms_server_version" "1.3.0"
+    "wms_format" "image/png"
+    "wms_srs" "EPSG:4326"
+    "wms_extent" "-180 -90 180 90"
+    "wms_connectiontimeout" "60"
+    "wms_attribution_text" "General Bathymetric Chart of the Oceans (GEBCO)"
+    "wms_attribution_onlineresource" "https://www.gebco.net/"
+    "wms_metadataurl_href" "https://www.gebco.net/data-products/gebco-web-services/web-map-service"
+    "wms_metadataurl_format" "text/html"
+    "wms_metadataurl_type" "TC211"
+  END
+END
