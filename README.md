@@ -53,6 +53,10 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
     - Live connection to GEBCO’s `GEBCO_LATEST` Web Map Service through `maps/layers/15_gebco_latest_shaded_relief.map`
     - Global shaded-relief bathymetry and land topography; no numerical depth legend; not for navigation
     - GEBCO updates the Latest WMS separately from its annual grid releases; a six-monthly availability check is planned
+- Mapping Bad Boats citizen-science observations from The Floating Stories Lab / ReTISS ([source][8])
+    - Synchronised by `/scripts/fetchMappingBadBoats.py`
+    - Coastal vessel observations, including vessel type, classification and nearby habitat, provided as GeoJSON point features
+    - Cron job runs weekly to synchronise new and updated observations
 
 ## Getting started
 
@@ -67,3 +71,4 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
 [5]: https://services9.arcgis.com/lm7wE8a9YA9rKfzy/arcgis/rest/services/Navigator_AllSites_010925_attributes/FeatureServer/0
 [6]: https://wmts.marine.copernicus.eu/teroWmts/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511?request=GetCapabilities&service=WMTS
 [7]: https://www.gebco.net/data-products/gebco-web-services/web-map-service
+[8]: https://services-eu1.arcgis.com/APM8FyQ4IgTmRlob/arcgis/rest/services/survey123_523fa2f55e7b42ee8752f33033616991_results/FeatureServer/0
