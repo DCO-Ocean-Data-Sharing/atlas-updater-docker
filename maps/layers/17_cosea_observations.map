@@ -13,7 +13,7 @@ LAYER
   TOLERANCEUNITS PIXELS
   METADATA
     "wms_title" "COSEA: citizen science marine observations"
-    "wms_abstract" "Georeferenced citizen-science observations submitted through the COSEA project on SPOTTERON. Records include observation locations, dates and category identifiers. Observations are contributed by participants and are not independently verified by the Atlas."
+    "wms_abstract" "This map shows citizen-science observations of abandoned, wrecked, derelict and potentially non-seaworthy vessels in coastal and marine environments, collected through The Floating Stories Lab / ReTISS Mapping Bad Boats initiative. Reported vessel locations, types and classifications highlight where damaged or abandoned boats may affect nearby habitats and coastal communities. It helps users explore the distribution of reported vessels and better understand potential environmental and social concerns. The information is based on public observations and does not represent a verified or comprehensive inventory of vessels."
     "wms_srs" "EPSG:4326"
     "wms_extent" "-180 -90 180 90"
     "wms_include_items" "all"
