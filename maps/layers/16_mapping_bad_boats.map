@@ -13,7 +13,7 @@ LAYER
   TOLERANCEUNITS PIXELS
   METADATA
     "wms_title" "Mapping Bad Boats: citizen science vessel observations"
-    "wms_abstract" "Citizen-science observations of end-of-life, derelict, wrecked and potentially abandoned vessels, collected through the ReTISS Mapping Bad Boats initiative. Records indicate observed vessel location, type, classification and nearby habitats. Observations are not independently verified by the Atlas and are not a comprehensive vessel inventory."
+    "wms_abstract" "This map shows citizen-science observations of abandoned, wrecked, derelict and potentially non-seaworthy vessels in coastal and marine environments, collected through The Floating Stories Lab / ReTISS Mapping Bad Boats initiative. Reported vessel locations, types and classifications highlight where damaged or abandoned boats may affect nearby habitats and coastal communities. It helps users explore the distribution of reported vessels and better understand potential environmental and social concerns. The information is based on public observations and does not represent a verified or comprehensive inventory of vessels."
     "wms_srs" "EPSG:4326"
     "wms_extent" "-180 -90 180 90"
     "wms_include_items" "all"
