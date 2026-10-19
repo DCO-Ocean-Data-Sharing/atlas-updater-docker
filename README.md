@@ -76,17 +76,6 @@ Supporting MapServer files and Python scripts are synchronised first, with `/map
 The sitemap replaces the previously maintained `/maps/sync-files.json` and `/scripts/scripts.json` file lists, providing a single source for determining which files should be synchronised.
 
 Changes to files already included in the sitemap can therefore be picked up automatically by the scheduled synchronisation. Changes to `docker-compose.yml` or other Docker configuration still need to be applied to the deployed Docker environment.
-- GEBCO Global Bathymetry and Topography - Shaded Relief ([source][7])
-    - Live connection to GEBCO’s `GEBCO_LATEST` Web Map Service through `maps/layers/15_gebco_latest_shaded_relief.map`
-    - Global shaded-relief bathymetry and land topography; no numerical depth legend; not for navigation
-- Mapping Bad Boats citizen-science observations from The Floating Stories Lab / ReTISS ([source][8])
-    - Synchronised by `/scripts/fetchMappingBadBoats.py`
-    - Coastal vessel observations, including vessel type, classification and nearby habitat, provided as GeoJSON point features
-    - Cron job runs weekly to synchronise new and updated observations
-- COSEA citizen-science marine observations from SPOTTERON ([source][9])
-    - Synchronised by `/scripts/fetchCOSEA.py`
-    - Georeferenced marine observations, including observation dates and category identifiers, provided as GeoJSON point features
-    - Cron job runs weekly to synchronise new and updated observations
 
 ## Getting started
 
