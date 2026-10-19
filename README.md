@@ -1,6 +1,6 @@
-# Atlas Updater - Docker
+# Docker Atlas Updater and Synchronisation
 
-A Docker-based approach to keeping background data for the UN Ocean Decade Atlas updated
+A Docker-based approach to keeping background data, MapServer configuration and updater scripts for the UN Ocean Decade Atlas updated and synchronised.
 
 - Authors:
     - [adamml](https://github.com/adamml)
@@ -49,6 +49,22 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
         - Net primary productivity of biomass expressed as carbon in sea water
         - Euphotic zone depth
         - Mass content of zooplankton expressed as carbon in sea water
+          
+## Automated GitHub synchronisation
+
+`/scripts/syncFromGitHub.py` synchronises MapServer configuration and Python updater scripts from the GitHub Pages sitemap every 6 hours.
+
+The sitemap used as the source is:
+
+`https://dco-ocean-data-sharing.github.io/atlas-updater-docker/sitemap.xml`
+
+Files listed in the sitemap under `/maps/` and `/scripts/` are synchronised to the corresponding directories in the running Docker environment.
+
+Supporting MapServer files and Python scripts are synchronised first, with `/maps/mapserver.map` updated last. This ensures that required layer and symbol files are available before the main MapServer configuration changes.
+
+The sitemap replaces the previously maintained `/maps/sync-files.json` and `/scripts/scripts.json` file lists, providing a single source for determining which files should be synchronised.
+
+Changes to files already included in the sitemap can therefore be picked up automatically by the scheduled synchronisation. Changes to `docker-compose.yml` or other Docker configuration still need to be applied to the deployed Docker environment.
 - GEBCO Global Bathymetry and Topography - Shaded Relief ([source][7])
     - Live connection to GEBCO’s `GEBCO_LATEST` Web Map Service through `maps/layers/15_gebco_latest_shaded_relief.map`
     - Global shaded-relief bathymetry and land topography; no numerical depth legend; not for navigation
