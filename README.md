@@ -38,8 +38,7 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
     - GeoPackage is created automatically if not already present and refreshed monthly on the first day of each month
     - Run docker compose up --build on first deployment or after Dockerfile changes. For subsequent starts, docker compose up can be used.
 - Copernicus Global ocean low and mid trophic levels biomass content hindcast
-    - Live connection via the `copernicus-bridge` container from the Copernicus Marine Web Map Tile Service
-    - [Source][6]
+    - Live connection via the `copernicus-bridge` container from the Copernicus Marine Web Map Tile Service ([source][6])
     - Layers:
         - Ocean wet mass content of epipelagic micronekton
         - Ocean wet mass content of highly migrant lower mesopelagic micronekton
@@ -66,6 +65,18 @@ Supporting MapServer files and Python scripts are synchronised first, with `/map
 The sitemap replaces the previously maintained `/maps/sync-files.json` and `/scripts/scripts.json` file lists, providing a single source for determining which files should be synchronised.
 
 Changes to files already included in the sitemap can therefore be picked up automatically by the scheduled synchronisation. Changes to `docker-compose.yml` or other Docker configuration still need to be applied to the deployed Docker environment.
+- GEBCO Global Bathymetry and Topography - Shaded Relief ([source][7])
+    - Live connection to GEBCO’s `GEBCO_LATEST` Web Map Service through `maps/layers/15_gebco_latest_shaded_relief.map`
+    - Global shaded-relief bathymetry and land topography; no numerical depth legend; not for navigation
+    - GEBCO updates the Latest WMS separately from its annual grid releases; a six-monthly availability check is planned
+- Mapping Bad Boats citizen-science observations from The Floating Stories Lab / ReTISS ([source][8])
+    - Synchronised by `/scripts/fetchMappingBadBoats.py`
+    - Coastal vessel observations, including vessel type, classification and nearby habitat, provided as GeoJSON point features
+    - Cron job runs weekly to synchronise new and updated observations
+- COSEA citizen-science marine observations from SPOTTERON ([source][9])
+    - Synchronised by `/scripts/fetchCOSEA.py`
+    - Georeferenced marine observations, including observation dates and category identifiers, provided as GeoJSON point features
+    - Cron job runs weekly to synchronise new and updated observations
 
 ## Getting started
 
@@ -79,3 +90,6 @@ Changes to files already included in the sitemap can therefore be picked up auto
 [4]: https://services2.arcgis.com/qRqOFxxnwUHOSocZ/arcgis/rest/services/ONCSites_CO2_XYTableToPoint/FeatureServer/0/query?where=1=1&outFields=*&f=geojson
 [5]: https://services9.arcgis.com/lm7wE8a9YA9rKfzy/arcgis/rest/services/Navigator_AllSites_010925_attributes/FeatureServer/0
 [6]: https://wmts.marine.copernicus.eu/teroWmts/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511?request=GetCapabilities&service=WMTS
+[7]: https://www.gebco.net/data-products/gebco-web-services/web-map-service
+[8]: https://services-eu1.arcgis.com/APM8FyQ4IgTmRlob/arcgis/rest/services/survey123_523fa2f55e7b42ee8752f33033616991_results/FeatureServer/0
+[9]: https://www.spotteron.com/cosea/info

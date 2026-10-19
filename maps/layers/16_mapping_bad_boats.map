@@ -1,0 +1,36 @@
+LAYER
+  NAME "mapping_bad_boats"
+  TYPE POINT
+  STATUS ON
+  CONNECTIONTYPE OGR
+  CONNECTION "/etc/mapserver/mapping_bad_boats.geojson"
+  DATA "mapping_bad_boats"
+  PROJECTION
+    "EPSG:4326"
+  END
+  TEMPLATE "blank.html"
+  TOLERANCE 8
+  TOLERANCEUNITS PIXELS
+  METADATA
+    "wms_title" "Mapping Bad Boats: citizen science vessel observations"
+    "wms_abstract" "This map shows citizen-science observations of abandoned, wrecked, derelict and potentially non-seaworthy vessels in coastal and marine environments, collected through The Floating Stories Lab / ReTISS Mapping Bad Boats initiative. Reported vessel locations, types and classifications highlight where damaged or abandoned boats may affect nearby habitats and coastal communities. It helps users explore the distribution of reported vessels and better understand potential environmental and social concerns. The information is based on public observations and does not represent a verified or comprehensive inventory of vessels."
+    "wms_srs" "EPSG:4326"
+    "wms_extent" "-180 -90 180 90"
+    "wms_include_items" "all"
+    "gml_include_items" "all"
+    "wms_attribution_text" "The Floating Stories Lab / ReTISS (UN Ocean Decade endorsed Action). Source: Bad Boats Survey results, ArcGIS Online."
+    "wms_attribution_onlineresource" "https://storymaps.arcgis.com/stories/b0ca3faa1b4049c28e49b59bc1a0a30a"
+    "wms_dataurl_href" "https://services-eu1.arcgis.com/APM8FyQ4IgTmRlob/arcgis/rest/services/survey123_523fa2f55e7b42ee8752f33033616991_results/FeatureServer/0"
+    "wms_dataurl_format" "application/json"
+  END
+  CLASS
+    NAME "Reported vessel location"
+    STYLE
+      SYMBOL "circle"
+      SIZE 9
+      COLOR 230 105 43
+      OUTLINECOLOR 255 255 255
+      WIDTH 1
+    END
+  END
+END
