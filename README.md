@@ -20,7 +20,7 @@ A Docker-based approach to keeping background data, MapServer configuration and 
     
 ## Layers managed
 
-Licensing and attribution of the managed layers is handled in the `/maps/mapserver.map` file in this repository
+Licensing and attribution of the managed layers is handled in the `/maps/mapserver.map` file in this repository:
 
 - Last 10 days of Argo float locations from Ifremer Erddap ([source][1])
     - Synchronised by `/scripts/fetchArgo.py`
@@ -49,6 +49,17 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
         - Net primary productivity of biomass expressed as carbon in sea water
         - Euphotic zone depth
         - Mass content of zooplankton expressed as carbon in sea water
+- GEBCO Global Bathymetry and Topography - Shaded Relief ([source][7])
+    - Live connection to GEBCO's `GEBCO_LATEST` Web Map Service through `maps/layers/15_gebco_latest_shaded_relief.map`
+    - Global shaded-relief bathymetry and land topography; no numerical depth legend; not for navigation
+- Mapping Bad Boats citizen-science observations from The Floating Stories Lab / ReTISS ([source][8])
+    - Synchronised by `/scripts/fetchMappingBadBoats.py`
+    - Coastal vessel observations, including vessel type, classification and nearby habitat, provided as GeoJSON point features
+    - Cron job runs weekly to synchronise new and updated observations
+- COSEA citizen-science marine observations from SPOTTERON ([source][9])
+    - Synchronised by `/scripts/fetchCOSEA.py`
+    - Georeferenced marine observations, including observation dates and category identifiers, provided as GeoJSON point features
+    - Cron job runs weekly to synchronise new and updated observations
           
 ## Automated GitHub synchronisation
 
@@ -68,7 +79,6 @@ Changes to files already included in the sitemap can therefore be picked up auto
 - GEBCO Global Bathymetry and Topography - Shaded Relief ([source][7])
     - Live connection to GEBCO’s `GEBCO_LATEST` Web Map Service through `maps/layers/15_gebco_latest_shaded_relief.map`
     - Global shaded-relief bathymetry and land topography; no numerical depth legend; not for navigation
-    - GEBCO updates the Latest WMS separately from its annual grid releases; a six-monthly availability check is planned
 - Mapping Bad Boats citizen-science observations from The Floating Stories Lab / ReTISS ([source][8])
     - Synchronised by `/scripts/fetchMappingBadBoats.py`
     - Coastal vessel observations, including vessel type, classification and nearby habitat, provided as GeoJSON point features
