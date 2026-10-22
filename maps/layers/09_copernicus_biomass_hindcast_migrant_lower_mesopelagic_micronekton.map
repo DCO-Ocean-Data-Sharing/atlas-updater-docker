@@ -23,7 +23,7 @@ LAYER
     "wms_srs"                 "EPSG:3857"
     "wms_extent"              "-20037508.34 -20037508.34 20037508.34 20037508.34"
     "wms_connection_request_metadata" "LAYER STYLE GROUP"
-    "wms_layer"          "mnkc_lmeso"
+    "wms_layer"          "mnkc_mlmeso"
     "wms_style"          "cmap:viridis"
     "wms_layer_group"           "/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511"
     "wms_group_title"           "Global ocean low and mid trophic levels biomass content hindcast"
