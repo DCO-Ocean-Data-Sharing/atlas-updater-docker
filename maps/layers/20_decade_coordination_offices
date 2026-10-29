@@ -1,0 +1,43 @@
+LAYER
+    NAME "Decade_coordination_offices"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/Decade-Coordination-Offices-Digital-Atlas-Layer/DCOs_layer.geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Decade Coordination Offices"
+      "wms_abstract" "This map shows the location of the UN Ocean Decade Coordination Offices (DCOs) their host country and institution and available website. DCOs provide long-term regional or thematic coordination for the UN Ocean Decade from within United Nations entities. They support Decade Actions through coordination and catalysis, helping to connect partners, identify gaps and opportunities, strengthen collaboration, promote co-design and scientific uptake, support capacity development and communications, and improve the use of available expertise and resources. They can focus on a particular ocean region or on a cross-cutting theme such as ocean observing, data sharing or the relationship between people and the ocean."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://oceanexpert.org/advancedSearch?type%5B0%5D=all&keywords%5B0%5D=%7CDCO%7C&action=advSearch"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_name" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_href" "https://oceandecade.org/decade-collaborative-centres/"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/Decade-Coordination-Offices-Digital-Atlas-Layer/DCOs_layer.geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "DCO Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 135 118 181
+        OUTLINECOLOR 135 118 181
+        WIDTH 5
+      END
+    END
+  END
