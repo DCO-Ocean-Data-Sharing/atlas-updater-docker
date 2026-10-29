@@ -1,0 +1,43 @@
+LAYER
+    NAME "Associate_data_units"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/Associate-Data-Units-Digital-Atlas-Layer/ADUs_layer.geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Associate Data Units"
+      "wms_abstract" "This map shows the locations of the Associate Data Units (ADUs). ADUs are projects, programmes, institutions and organisations formally recognised by the International Oceanographic Data and Information Exchange (IODE) for their role in managing, preserving and sharing ocean data. They contribute to the use of common standards and best practices, participate in training and technical cooperation, and support the long-term accessibility and preservation of ocean data and metadata. ADUs extend the IODE network beyond national data centres by connecting specialised research programmes, observing systems and institutions that operate their own data services."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://oceanexpert.org/advancedSearch?type%5B0%5D=all&keywords%5B0%5D=%7CADU%7C&action=advSearch"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "IOC of UNESCO, International Oceanographic Data and Information Exchange (IODE)"
+      "wms_authorityurl_name" "OceanExpert"
+      "wms_authorityurl_href" "https://oceanexpert.org/advancedSearch?type%5B0%5D=all&keywords%5B0%5D=%7CADU%7C&action=advSearch"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/Associate-Data-Units-Digital-Atlas-Layer/ADUs_layer.geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "ADU Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 72 49 86
+        OUTLINECOLOR 72 49 86
+        WIDTH 5
+      END
+    END
+  END
