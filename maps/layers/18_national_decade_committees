@@ -1,0 +1,43 @@
+LAYER
+    NAME "National_decade_committees"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/National-Decade-Committees/NDCs_layer.geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "National Decade Committees"
+      "wms_abstract" "This map shows the location of the National Decade Committees (NDCs), its host institution and the number of Decade Actions (projects, programmes and contributions endorsed by the Decade) in the country.  NDCs play an important role to increase national participation in the Decade by promoting the calls for Decade Actions and strengthening collaboration between science, policy, industry, civil society and local communities. They also connect Decade activity with other ocean stakeholders at a national level."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://oceanexpert.org/advancedSearch?action=browse&type=all&query=%7CNDC%7C"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_name" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_href" "https://oceandecade.org/national-ocean-decade-ecosystem/"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/National-Decade-Committees/NDCs_layer.geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "NDC Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 0 92 109
+        OUTLINECOLOR 0 92 109
+        WIDTH 5
+      END
+    END
+  END
