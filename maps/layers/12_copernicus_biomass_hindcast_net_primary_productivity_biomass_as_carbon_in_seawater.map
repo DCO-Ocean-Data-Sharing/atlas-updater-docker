@@ -15,6 +15,7 @@ LAYER
   
   METADATA
     "wms_title"          "Net primary productivity of biomass expressed as carbon in sea water"
+    "wms_abstract" "This map shows net primary productivity across the global ocean, which describes the rate at which microscopic marine plants, such as phytoplankton, produce new organic material through photosynthesis after accounting for their own energy use. This process forms the foundation of marine food webs by providing the organic matter that supports zooplankton, fish and other marine animals. Using daily Copernicus Marine data, the map helps users explore where ocean productivity is higher or lower and how it changes across different regions, seasons and years."
     "wms_name"           "GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511/npp"
     "wms_format"         "image/png"
     "wms_server_version"  "1.3.0"
@@ -27,6 +28,7 @@ LAYER
     "wms_style"          "cmap:viridis"
     "wms_layer_group"           "/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511"
     "wms_group_title"           "Global ocean low and mid trophic levels biomass content hindcast"
+    "wms_group_abstract" "This collection of Copernicus Marine maps shows daily estimates of marine biomass and environmental conditions across the global ocean. The layers include zooplankton biomass, six groups of micronekton (small swimming animals such as fish, squid and crustaceans), net primary productivity (the rate at which marine plants produce organic matter) and euphotic zone depth (the depth to which sufficient sunlight penetrates for photosynthesis). The maps combine modelled estimates of past ocean conditions with supporting environmental data. Together, they help users explore how marine food webs and the conditions that support them vary across regions and over time."
   END
   
 END
