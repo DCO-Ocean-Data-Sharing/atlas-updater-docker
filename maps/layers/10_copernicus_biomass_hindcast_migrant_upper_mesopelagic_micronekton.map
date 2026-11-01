@@ -1,6 +1,5 @@
 LAYER
   NAME "migrant_upper_mesopelagic_micronekton"
-  GROUP "copernicus_marine_biomass_hindcast"
   TYPE RASTER
   STATUS ON
   CONNECTIONTYPE WMS
@@ -27,6 +26,7 @@ LAYER
     "wms_connection_request_metadata" "LAYER STYLE GROUP"
     "wms_layer"          "mnkc_mumeso"
     "wms_style"          "cmap:viridis"
+    "wms_layer_group" "/GLOBAL_MULTIYEAR_BGC_001_033/cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i_202511"
     "wms_group_title"           "Global ocean low and mid trophic levels biomass content hindcast"
     "wms_group_abstract" "This collection of Copernicus Marine maps shows daily estimates of marine biomass and environmental conditions across the global ocean. The layers include zooplankton biomass, six groups of micronekton (small swimming animals such as fish, squid and crustaceans), net primary productivity (the rate at which marine plants produce organic matter) and euphotic zone depth (the depth to which sufficient sunlight penetrates for photosynthesis). The maps combine modelled estimates of past ocean conditions with supporting environmental data. Together, they help users explore how marine food webs and the conditions that support them vary across regions and over time."
   END
