@@ -1,0 +1,43 @@
+LAYER
+    NAME "Decade_implementing_partners"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/Decade-Implementing-Partners/DIPs%20geojson.geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Decade Implementing Partners"
+      "wms_abstract" "This map shows the location of the UN Ocean Decade Implementing Partners (DIPs), their host country and institution and available website. DIPs include institutions, networks and organisations formally recognised for making sustained contributions to the implementation of the UN Ocean Decade. Their vision, mission or mandate aligns with the priorities of the Decade, and their support can include coordinating existing Decade Actions, catalysing new initiatives, convening communities, leading targeted communications and outreach, supporting co-design and capacity development, and mobilising expertise, partnerships or resources. They help connect scientific knowledge with policy, practice and society."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://oceanexpert.org/advancedSearch?type%5B0%5D=all&keywords%5B0%5D=%7CDIP%7C&action=advSearch"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_name" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_href" "https://oceandecade.org/decade-implementing-partners/"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/Decade-Implementing-Partners/DIPs%20geojson.geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "DIP Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 222 106 165
+        OUTLINECOLOR 222 106 165
+        WIDTH 5
+      END
+    END
+  END
