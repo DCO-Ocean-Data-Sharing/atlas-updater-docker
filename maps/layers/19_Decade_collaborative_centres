@@ -1,0 +1,43 @@
+LAYER
+    NAME "Decade_collaborative_centres"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/Decade-Collaborative-Centres-Digital-Atlas-Layer/DCCs_layer.geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Decade Collaborative Centres"
+      "wms_abstract" "This map shows the location of the UN Ocean Decade Collaborative Centres (DCCs), their host country and institution. DCCs provide long-term regional or thematic coordination for the UN Ocean Decade and are hosted outside the United Nations system. They help coordinate existing Decade Actions, catalyse new initiatives and partnerships, support communications and capacity development, mobilise resources and strengthen the co-design and uptake of ocean science. They connect communities working on shared ocean basins, regions or Decade Challenges so that knowledge, expertise and resources can be used more effectively. Decade Collaborative Centres presents institutions that provide long-term regional or thematic coordination for the UN Ocean Decade while being hosted outside the United Nations system. Decade Collaborative Centres help coordinate existing Decade Actions, catalyse new initiatives and partnerships, support communications and capacity development, mobilise resources and strengthen the co-design and uptake of ocean science. Their role is to connect communities working on shared ocean basins, regions or Decade Challenges so that knowledge, expertise and resources can be used more effectively. For each centre, the Ocean Decade directory records its name, host institution, country, coordination location and available website. The location marks the institutional base from which the centre operates and helps viewers connect the centre with its wider regional or thematic mandate."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://oceanexpert.org/advancedSearch?type%5B0%5D=all&keywords%5B0%5D=%7CDCC%7C&action=advSearch"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_name" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_href" "https://oceandecade.org/decade-collaborative-centres/"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/Decade-Collaborative-Centres-Digital-Atlas-Layer/DCCs_layer.geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "DCC Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 135 118 181
+        OUTLINECOLOR 135 118 181
+        WIDTH 5
+      END
+    END
+  END
