@@ -1,0 +1,43 @@
+LAYER
+    NAME "National_oceanographic_data_centres"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/National-Oceanographic-Data-Centres-Layer-Digital-Atlas/NODCs_layer.geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "National Oceanographic Data Centres"
+      "wms_abstract" "This map shows the locations of National Oceanographic Data Centres (NODCs) within the International Oceanographic Data and Information Exchange (IODE) network. This information is intended to help users find the relevant data centre. NODCs are institutions officially designated by IOC Member States to provide access to and stewardship of national oceanographic data resources. They receive data from research, monitoring and operational programmes, apply quality-control procedures and agreed standards, preserve the data and the information needed to interpret it, and make national ocean data available for science, services, assessments and decision-making. They support data management planning, exchange data internationally and contribute to products such as statistical summaries and ocean atlases."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://oceanexpert.org/advancedSearch?type%5B0%5D=all&keywords%5B0%5D=%7CNODC%7C&action=advSearch"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "IOC of UNESCO, International Oceanographic Data and Information Exchange (IODE)"
+      "wms_authorityurl_name" "OceanExpert"
+      "wms_authorityurl_href" "https://oceanexpert.org/advancedSearch?type%5B0%5D=all&keywords%5B0%5D=%7CNODC%7C&action=advSearch"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/National-Oceanographic-Data-Centres-Layer-Digital-Atlas/NODCs_layer.geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "NODC Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 72 49 86
+        OUTLINECOLOR 72 49 86
+        WIDTH 5
+      END
+    END
+  END
