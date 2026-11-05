@@ -28,6 +28,33 @@
     <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/03_ocean_networks_canada_observatories.map</loc>
   </url>
   <url>
+    <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/15_gebco_latest_shaded_relief.map</loc>
+  </url>
+  <url>
+    <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/16_mapping_bad_boats.map</loc>
+  </url>
+  <url>
+    <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/17_cosea_observations.map</loc>
+  </url>
+  <url>
+    <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/18_national_decade_committees</loc>
+  </url>
+  <url>
+    <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/19_Decade_collaborative_centres</loc>
+  </url>
+  <url>
+    <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/20_decade_coordination_offices</loc>
+  </url>
+  <url>
+    <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/21_decade_implementing_partners</loc>
+  </url>
+  <url>
+    <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/22_national_oceanographic_data_centres</loc>
+  </url>
+  <url>
+    <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/23_associate_data_units</loc>
+  </url>
+  <url>
     <loc>https://dco-ocean-data-sharing.github.io/atlas-updater-docker/maps/layers/04_ocean_prediction_systems_atlas.map</loc>
   </url>
   <url>
