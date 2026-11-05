@@ -43,5 +43,11 @@ MAP
   INCLUDE "layers/15_gebco_latest_shaded_relief.map"
   INCLUDE "layers/16_mapping_bad_boats.map"
   INCLUDE "layers/17_cosea_observations.map"
+  INCLUDE "layers/18_national_decade_committees"
+  INCLUDE "layers/19_Decade_collaborative_centres"
+  INCLUDE "layers/20_decade_coordination_offices"
+  INCLUDE "layers/21_decade_implementing_partners"
+  INCLUDE "layers/22_national_oceanographic_data_centres"
+  INCLUDE "layers/23_associate_data_units"
 
 END
