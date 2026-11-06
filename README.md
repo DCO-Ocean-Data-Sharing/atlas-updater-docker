@@ -60,7 +60,25 @@ Licensing and attribution of the managed layers is handled in the `/maps/mapserv
     - Synchronised by `/scripts/fetchCOSEA.py`
     - Georeferenced marine observations, including observation dates and category identifiers, provided as GeoJSON point features
     - Cron job runs weekly to synchronise new and updated observations
-          
+- National Decade Committees ([source][10])
+    - Live connection to a GeoJSON layer of committee locations, host institutions and numbers of Decade Actions in each country
+    - Defined in `/maps/layers/18_national_decade_committees`
+- Decade Collaborative Centres ([source][11])
+    - Live connection to a GeoJSON layer showing the locations and host institutions of the Ocean Decade's regional and thematic Collaborative Centres
+    - Defined in `/maps/layers/19_Decade_collaborative_centres`
+- Decade Coordination Offices ([source][12])
+    - Live connection to a GeoJSON layer showing the locations and host institutions of Decade Coordination Offices within United Nations entities
+    - Defined in `/maps/layers/20_decade_coordination_offices`
+- Decade Implementing Partners ([source][13])
+    - Live connection to a GeoJSON layer showing organisations and networks recognised as Decade Implementing Partners
+    - Defined in `/maps/layers/21_decade_implementing_partners`
+- National Oceanographic Data Centres ([source][14])
+    - Live connection to a GeoJSON layer showing the locations of National Oceanographic Data Centres in the IODE network
+    - Defined in `/maps/layers/22_national_oceanographic_data_centres`
+- Associate Data Units ([source][15])
+    - Live connection to a GeoJSON layer showing the locations of Associate Data Units recognised by IODE
+    - Defined in `/maps/layers/23_associate_data_units`
+    
 ## Automated GitHub synchronisation
 
 `/scripts/syncFromGitHub.py` synchronises MapServer configuration and Python updater scripts from the GitHub Pages sitemap every 6 hours.
@@ -92,3 +110,10 @@ Changes to files already included in the sitemap can therefore be picked up auto
 [7]: https://wms.gebco.net/2026/mapserv?service=WMS&request=GetCapabilities&version=1.3.0
 [8]: https://services-eu1.arcgis.com/APM8FyQ4IgTmRlob/arcgis/rest/services/survey123_523fa2f55e7b42ee8752f33033616991_results/FeatureServer/0/query?where=1%3D1&outFields=*&f=geojson
 [9]: https://www.spotteron.com/api/v2.4/spots?filter%5Btopic_id%5D=63
+
+[10]: https://dco-ocean-data-sharing.github.io/National-Decade-Committees/NDCs_layer.geojson
+[11]: https://dco-ocean-data-sharing.github.io/Decade-Collaborative-Centres-Digital-Atlas-Layer/DCCs_layer.geojson
+[12]: https://dco-ocean-data-sharing.github.io/Decade-Coordination-Offices-Digital-Atlas-Layer/DCOs_layer.geojson
+[13]: https://dco-ocean-data-sharing.github.io/Decade-Implementing-Partners/DIPs%20geojson.geojson
+[14]: https://dco-ocean-data-sharing.github.io/National-Oceanographic-Data-Centres-Layer-Digital-Atlas/NODCs_layer.geojson
+[15]: https://dco-ocean-data-sharing.github.io/Associate-Data-Units-Digital-Atlas-Layer/ADUs_layer.geojson
