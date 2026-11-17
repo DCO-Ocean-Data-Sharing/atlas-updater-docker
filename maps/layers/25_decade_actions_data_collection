@@ -1,0 +1,44 @@
+LAYER
+    NAME "Data_Collection_Decade_Actions"
+    TYPE POLYGON
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/Decade-Actions-data-collectio/Data collection geojson.geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Decade Actions Data Collection Areas"
+      "wms_abstract" "This map shows the geographic areas where Ocean Decade Actions collect data. These observations are gathered using a range of platforms, including research vessels, satellites, autonomous systems, buoys, underwater sensors, and citizen science initiatives, etc. Through coordinated data collection, open data sharing, and collaboration, the Ocean Decade generates information that supports scientific research, evidence-based decision-making, and sustainable ocean management."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://dco-ocean-data-sharing.github.io/Decade-Actions-data-collectio/Data collection geojson.geojson"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_name" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_href" "https://dco-ocean-data-sharing.github.io/Decade-Actions-data-collectio/Data collection geojson.geojson"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/Decade-Actions-data-collectio/Data collection geojson.geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "Data collection Style"
+      STYLE
+        COLOR 233 73 99
+        OPACITY 25
+      END
+      STYLE
+        OUTLINECOLOR 233 73 99
+        WIDTH 2
+      END
+    END
+  END
