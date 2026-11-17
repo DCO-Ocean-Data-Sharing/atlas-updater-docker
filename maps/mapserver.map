@@ -49,5 +49,8 @@ MAP
   INCLUDE "layers/21_decade_implementing_partners"
   INCLUDE "layers/22_national_oceanographic_data_centres"
   INCLUDE "layers/23_associate_data_units"
-
+  INCLUDE "layers/24_capacity_development_ocean_decade"
+  INCLUDE "layers/25_decade_actions_data_collection"
+  INCLUDE "layers/26_cdf_partner_institutions_and_trainings"
+  INCLUDE "layers/27_institutions_and_decade_actions"
 END
