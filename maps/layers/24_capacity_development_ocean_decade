@@ -1,0 +1,43 @@
+LAYER
+    NAME "Capacity_development_UN_Ocean_Decade"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/Capacity-development-in-the-UN-Ocean-Decade/Training geojson.geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Capacity Development in the UN Ocean Decade"
+      "wms_abstract"This map shows the number of trainees per country that have participated in different capacity development initiatives facilitated by the UN Ocean Decade.  It includes a total number of trainings lead by the DCO for Ocean Data Sharing, DCC for Coastal Resilience, Capacity Development Fund and Ocean Networks Canada. Capacity development is a cross-cutting area of the Ocean Decade because producing and applying ocean knowledge depends on people and institutions having the skills, technologies, networks and opportunities needed to participate.""
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://dco-ocean-data-sharing.github.io/Capacity-development-in-the-UN-Ocean-Decade"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_name" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_href" "https://dco-ocean-data-sharing.github.io/Capacity-development-in-the-UN-Ocean-Decade"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/Capacity-development-in-the-UN-Ocean-Decade/Training geojson.geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "Training Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 233 73 99
+        OUTLINECOLOR 233 73 99
+        WIDTH 5
+      END
+    END
+  END
