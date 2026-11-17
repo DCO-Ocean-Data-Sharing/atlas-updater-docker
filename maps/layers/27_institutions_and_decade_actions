@@ -1,0 +1,43 @@
+LAYER
+    NAME "Institutions_and_Decade_Actions"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/Institutions-and-Decade-Actions/UN Ocean Decade Institutions and Decade Actions (1).geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Endorsed Decade Actions Institutions"
+      "wms_abstract" "This map shows the locations of the Endorsed Decade Action Institutions recorded as leading or supporting endorsed Actions under the UN Decade of Ocean Science for Sustainable Development. The institutions include universities, research organisations, government bodies, international organisations, non-governmental organisations, private companies and other partners contributing to Decade programmes, projects and contributions. Each point represents the headquarters, main campus, administrative office, operational office or best-available institutional reference location identified."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://dco-ocean-data-sharing.github.io/Institutions-and-Decade-Actions/UN Ocean Decade Institutions and Decade Actions (1).geojson"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_name" "UN Ocean Decade Coordination Unit"
+      "wms_authorityurl_href" "https://dco-ocean-data-sharing.github.io/Institutions-and-Decade-Actions/UN Ocean Decade Institutions and Decade Actions (1).geojson/"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/Institutions-and-Decade-Actions/UN Ocean Decade Institutions and Decade Actions (1).geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "Decade institutions Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 249 177 26
+        OUTLINECOLOR 249 177 26
+        WIDTH 5
+      END
+    END
+  END
