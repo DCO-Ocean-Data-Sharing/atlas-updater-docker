@@ -1,0 +1,43 @@
+LAYER
+    NAME "CDF_partner_institutions_and_trainings"
+    TYPE POINT
+    STATUS ON
+    SIZEUNITS PIXELS
+    CONNECTIONTYPE OGR
+    
+    TOLERANCE 10
+    TOLERANCEUNITS PIXELS
+    
+    CONNECTION "GEOJSON:/vsicurl/https://dco-ocean-data-sharing.github.io/CDF-partner-institutions-and-trainings/CDF partner institutions and trainings.geojson"
+        
+    PROJECTION
+      "EPSG:4326"
+    END
+    TEMPLATE "blank.html"
+    METADATA
+      "wms_title" "Capacity Development Facility Partner Institutions and Trainings"
+      "wms_abstract" "This map shows the lead institutions and the trainings and capacity building initiatives supported or coordinated through the Ocean Decade Capacity Development Facility (CDF). The CDF seeks to strengthen skills, expertise, networks and access to opportunities, with particular attention to groups and regions that face persistent barriers to participation, including Small Island Developing States, Least Developed Countries and Early Career Ocean Professionals. It responds to the needs of individuals and institutions so they can participate in the co-design, co-delivery and use of ocean science and knowledge for sustainable development."
+      "wms_extent" "-180 -90 180 90"
+      "wms_include_items" "all"
+      "gml_include_items" "all"
+      "wms_metadata_href" "https://oceandecade.org/capacity-development-facility/"
+      "wms_metadata_type" "text/html"
+      "wms_metadataurl_1_type"   "TC211"
+      "wms_authority" "UN Ocean Decade Capacity Development Facility"
+      "wms_authorityurl_name" "UN Ocean Decade Capacity Development Facility"
+      "wms_authorityurl_href" "https://oceandecade.org/capacity-development-facility/"
+      "wms_dataurl_href"   "https://dco-ocean-data-sharing.github.io/CDF-partner-institutions-and-trainings/CDF partner institutions and trainings.geojson"
+      "wms_dataurl_format" "application/geo+json"
+    END
+
+    CLASS
+      NAME "CDF Style"
+      STYLE
+        SYMBOL "circle"
+        SIZE 10
+        COLOR 39 177 152
+        OUTLINECOLOR 39 177 152
+        WIDTH 5
+      END
+    END
+  END
